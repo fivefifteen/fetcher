@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+$version = '0.0.1';
+
+if (file_exists(__DIR__ . '/../../../autoload.php')) {
+  require_once(__DIR__ . '/../../../autoload.php');
+} elseif (file_exists(__DIR__ . '/../vendor/autoload.php')) {
+  require_once(__DIR__ . '/../vendor/autoload.php');
+}
+
+$app = new Ahc\Cli\Application('Fetcher', $version);
+
+$app->add(new Fetcher\Command\Info, 'n');
+$app->add(new Fetcher\Command\Install, 'i');
+$app->add(new Fetcher\Command\Uninstall, 'u');
+$app->add(new Fetcher\Command\Versions, 'v');
+
+$app->onException(function(Throwable $e, int $exitCode) {
+  $writer = new \Ahc\Cli\Output\Writer;
+  $writer->colors("<red>Error</end>: {$e->getMessage()}", true);
+  exit($exitCode);
+});
+
+$app->handle($_SERVER['argv']);
+?>

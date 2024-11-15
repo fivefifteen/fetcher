@@ -1,0 +1,2502 @@
+[
+  {
+    "sha": "7eb28645d7c279f8e0152bcb9a0dee17910b5082",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6N2ViMjg2NDVkN2MyNzlmOGUwMTUyYmNiOWEwZGVlMTc5MTBiNTA4Mg==",
+    "commit": {
+      "author": {
+        "name": "Richie Bendall",
+        "email": "richiebendall@gmail.com",
+        "date": "2020-04-08T14:24:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-04-08T14:24:03Z"
+      },
+      "message": "🌹 Simplify typings (#28)\n\nSigned-off-by: Richie Bendall <richiebendall@gmail.com>",
+      "tree": {
+        "sha": "93166656e5a59099d50a90204ed35ad66ca36a37",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/93166656e5a59099d50a90204ed35ad66ca36a37"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/7eb28645d7c279f8e0152bcb9a0dee17910b5082",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJejd6DCRBK7hj4Ov3rIwAAdHIIAEXDMLIf38Lzf8moVbqbuRQa\nXdE9XM5qnUZY2skl9JsJ95qdF95llpGwiLH/NYYQIiC0MiLdJkhrcPatZlg/D3jz\nCZ/WeoiXwQuGr4R4G52UmL+B3Z0KTHghqu9evO/KeFlH70BmzEPPpygM4jcWkGVr\nQDEXMKy8sWtX/HLyrn/5iV1ikgWnJw6E6Wxy0msDNEiRKjE3qtXUy/XAwQgvi3f0\nIRD3QNijtO+anbSQNCIV0OpjrmsduWREHkhHJ4JHKPKZq8m4ZmTSoN7/lRyajh2e\nsP1qKc61eVBk9eSbNLGamjZJzbFvh0fO7yqN+tVtcNVtikAltxSDgWXcApNN1Pw=\n=eAZO\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 93166656e5a59099d50a90204ed35ad66ca36a37\nparent 97d2243464f6557ba7cf9cd6790cd58c3470f583\nauthor Richie Bendall <richiebendall@gmail.com> 1586355843 +1200\ncommitter GitHub <noreply@github.com> 1586355843 +0100\n\n🌹 Simplify typings (#28)\n\nSigned-off-by: Richie Bendall <richiebendall@gmail.com>",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/7eb28645d7c279f8e0152bcb9a0dee17910b5082",
+    "html_url": "https://github.com/kodie/md5-file/commit/7eb28645d7c279f8e0152bcb9a0dee17910b5082",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/7eb28645d7c279f8e0152bcb9a0dee17910b5082/comments",
+    "author": {
+      "login": "Richienb",
+      "id": 29491356,
+      "node_id": "MDQ6VXNlcjI5NDkxMzU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29491356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Richienb",
+      "html_url": "https://github.com/Richienb",
+      "followers_url": "https://api.github.com/users/Richienb/followers",
+      "following_url": "https://api.github.com/users/Richienb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Richienb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Richienb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Richienb/subscriptions",
+      "organizations_url": "https://api.github.com/users/Richienb/orgs",
+      "repos_url": "https://api.github.com/users/Richienb/repos",
+      "events_url": "https://api.github.com/users/Richienb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Richienb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "97d2243464f6557ba7cf9cd6790cd58c3470f583",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/97d2243464f6557ba7cf9cd6790cd58c3470f583",
+        "html_url": "https://github.com/kodie/md5-file/commit/97d2243464f6557ba7cf9cd6790cd58c3470f583"
+      }
+    ]
+  },
+  {
+    "sha": "97d2243464f6557ba7cf9cd6790cd58c3470f583",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6OTdkMjI0MzQ2NGY2NTU3YmE3Y2Y5Y2Q2NzkwY2Q1OGMzNDcwZjU4Mw==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:42:02Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:42:02Z"
+      },
+      "message": "🚢 5.0.0",
+      "tree": {
+        "sha": "0b6f2eb47146dc2f5869318c4c978eea5ca26e41",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/0b6f2eb47146dc2f5869318c4c978eea5ca26e41"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/97d2243464f6557ba7cf9cd6790cd58c3470f583",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCAAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAl6JxAoUHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm/q0Q/9EQz+o3VUYmEW1TITzmOCNWSfIVr9\ntuogMpqQM+ryfoyeNFiEj9YEI2eJY+5aQ2z45hy9/gpKDOM9MTYA47j6Gmj9sf4u\nHJOa14DkNI7/B8HaIwIGiii0pqrjHrURVy/bBX5S4rbQ4V9FLIZZpnduCbDaUjmH\nx49QfZk6x+KJaqQJYp2RvecUFs3EHh6UeMklPUxwLlQhimQy9kKupLB0iOPRFTT2\nv0O1t4AHTHvB1IH1bv9UK3bVBYgiyMIgULSSxiCnnl2ra6LXDCAqRicJ8sSZk4cv\nLbPBQUbuacIG6maaLlmSzIKdAL5KgxtZRiDEobuonrB/KGXNZCKp0ZkiTiQrTa2z\n8wimJb1soOzHRMQH3gLuIT8HZzZPWxDrTuyboqye/NzZP9KOfF2gJZypbKA9ps/K\nqiqitZM+AhkQ/uy1+cPxdHBnjKM+cc51ndChaPTNH8WRWHWouWe12rk+Gv0RIiTq\nCAs0aEsCFDihzhWxN8MnOEBi/mlbmnHTFIoFDWrFTfdEEkb1dlEteOyEjaKlt8h1\nPGPiXCu0T8mPamuwlVRPVOFfJDuO/hfTc53sm9UWZYedNcGW7vMEPwnS7Tvm8yoT\ngL5TVIo+ilDv3amvkzDZhxDWMsX5w/gXN/t6AcqvtF7FpfCotl76HnTzsV7CYwmN\noQMl8MXDWIhyxrk=\n=0b6p\n-----END PGP SIGNATURE-----",
+        "payload": "tree 0b6f2eb47146dc2f5869318c4c978eea5ca26e41\nparent 6cf4f6c93bb157e5031136067401435da34360b8\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586086922 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1586086922 +0100\n\n🚢 5.0.0\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/97d2243464f6557ba7cf9cd6790cd58c3470f583",
+    "html_url": "https://github.com/kodie/md5-file/commit/97d2243464f6557ba7cf9cd6790cd58c3470f583",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/97d2243464f6557ba7cf9cd6790cd58c3470f583/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6cf4f6c93bb157e5031136067401435da34360b8",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/6cf4f6c93bb157e5031136067401435da34360b8",
+        "html_url": "https://github.com/kodie/md5-file/commit/6cf4f6c93bb157e5031136067401435da34360b8"
+      }
+    ]
+  },
+  {
+    "sha": "6cf4f6c93bb157e5031136067401435da34360b8",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NmNmNGY2YzkzYmIxNTdlNTAzMTEzNjA2NzQwMTQzNWRhMzQzNjBiOA==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:41:29Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:41:29Z"
+      },
+      "message": "🎉 Add TypeScript typings",
+      "tree": {
+        "sha": "93ac864ec78d4dd2a5529fb17091b84e3159453f",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/93ac864ec78d4dd2a5529fb17091b84e3159453f"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/6cf4f6c93bb157e5031136067401435da34360b8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCAAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAl6Jw+4UHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm/wiRAAtLJ2yiBcjIJGf9paguRiaquY1mix\n+HfN0rGOmjQLGCzqIUquJI34rFYIzosw5xpR71mhr52WV+TyYAS8QN/DHwsSs2z4\ntWsKQDfKh418C9FQntBFKx2lUw3RnMosiYDnKf5p7zxkIsrNEY6M6MQHksWnuI6k\nRgCDGQjIA5YrxO2nFi4zUKcy4RHwPB6s0cUYZcNUx1mni0EzqbLyZssl0B8DCY0p\n8d7kFKm8J9ogxGFP2fYrJmSyQ5asP4sq8MYmPbv0VsI1U+xyXsFG6gY8vl639vxp\nus3NwqP4PSiAVR2mNIbS8354FcEXpEzlm5+UZ00tIgo9Mqh5gFBj+CSYxSDQviD7\nN+Iur9GpdRdrk+wB13v9xdt/+NCNsUenONeDuw71GDO6deIHiK4d/8/wCFaGFwBP\nckuzp8zyglaLW+P1FRy6rBc3s4jzT5FA4pKIjmmoyQqmwopmCXI8MMgFNW9SmDB9\nKrbqeyQp6L/SpWV5KlJDvVdXSJTNqDnJfTE+Lxy4AGZQKB1c18827aCvVfuOvtuu\nQYIAYXekZBRerRRPXgV9WhwL/x0KKclzQpJJ/uIQ53DHr58J0KPDT7/L8Z03/5HC\nYma1NAG6lWCyJvU62JZ1emjqndFZszM09aDInFka5X5RldNj7CBhACo6F9mzt8BU\nxmjrIVBb5D2Ssvc=\n=beu8\n-----END PGP SIGNATURE-----",
+        "payload": "tree 93ac864ec78d4dd2a5529fb17091b84e3159453f\nparent 122dd4144ae6341595c6998901217e368e7da268\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586086889 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1586086889 +0100\n\n🎉 Add TypeScript typings\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/6cf4f6c93bb157e5031136067401435da34360b8",
+    "html_url": "https://github.com/kodie/md5-file/commit/6cf4f6c93bb157e5031136067401435da34360b8",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/6cf4f6c93bb157e5031136067401435da34360b8/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "122dd4144ae6341595c6998901217e368e7da268",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/122dd4144ae6341595c6998901217e368e7da268",
+        "html_url": "https://github.com/kodie/md5-file/commit/122dd4144ae6341595c6998901217e368e7da268"
+      }
+    ]
+  },
+  {
+    "sha": "122dd4144ae6341595c6998901217e368e7da268",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MTIyZGQ0MTQ0YWU2MzQxNTk1YzY5OTg5MDEyMTdlMzY4ZTdkYTI2OA==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:32:47Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:33:39Z"
+      },
+      "message": "💥 Drop support for Node.js < 10.13.0\n\nMigration Guide:\n\nUpgrade to Node.js 10.13.0 or newer for continued support.",
+      "tree": {
+        "sha": "dfced35791a86dbc04891a782325db836bb44224",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/dfced35791a86dbc04891a782325db836bb44224"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/122dd4144ae6341595c6998901217e368e7da268",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCAAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAl6JwhMUHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm/dPQ/+O3i7uS+9ceTTgljhyAzzQQ0BGo6R\n/bBpIs+s/K90naM8T1ZIbnhDH8/GAYkqtet2tF3lVACkHgNIPdLp275OC8UgurJn\nJoBa3BEH1p+0LpMt9/2Rt62xX1cY05Ry0i7A8qHe9MkFIbNeu/atG34vJXxWGYZ9\nFs1apqxCdCCbWFAgEFcZXFV9dZp+TEJEcJ2IcR0mM0blr9EmV3qjzQt0Z3kQ/hT9\ndX2tMfxsbyvkem79C58hXKYyORX4EIKAn9eRJxZHpEEUEpi+r6VFnsA3FfJmcQw+\njT2j5T3Wiu1/dvKizuvPJYsD88QuGC547GCWCyKmFSdrpjfXJusa4QGL9u8qCd5i\n2N1VMs49PBMAR1dA1K1HzzJN64kVhTbAS9gOSmMLSe+g1V1xDECmQGSbJS+5boKH\nVFYM4oLkiF182M0huV/6KOQT8tcFtoFLmndX1DyufHlfARwoHi4n3hKXf0+ZKtsk\n9SL4jD/a2oCK1urnzIHS6uZMiOCf3KVNyWSvmm8PzD3a/yp8nFzXqlkbEeK/g+3U\nGXucHzS0hEFfQfjpbiLBNniAOehYQ+G9fp7e706ANGmucWcwD6oQm0M2nljMxHkC\n4NFiXvUUJr4wW6umP5NHyLkJ1YoDvJZGupZiFrYPTBcmNp/v/Azkt4dgTtSb1s8m\nAljhacMQSrAakkI=\n=SBOT\n-----END PGP SIGNATURE-----",
+        "payload": "tree dfced35791a86dbc04891a782325db836bb44224\nparent 6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586086367 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1586086419 +0100\n\n💥 Drop support for Node.js < 10.13.0\n\nMigration Guide:\n\nUpgrade to Node.js 10.13.0 or newer for continued support.\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/122dd4144ae6341595c6998901217e368e7da268",
+    "html_url": "https://github.com/kodie/md5-file/commit/122dd4144ae6341595c6998901217e368e7da268",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/122dd4144ae6341595c6998901217e368e7da268/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+        "html_url": "https://github.com/kodie/md5-file/commit/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413"
+      }
+    ]
+  },
+  {
+    "sha": "6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NmNkZGM3ZWE4YmE2NmI4ZTA3ZWE2MjdkOTEwNDJjYmQwYzhjMDQxMw==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:23:17Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:33:39Z"
+      },
+      "message": "💥 Remove support for callbacks\n\nMigration Guide:\n\nInstead of passing a callback to `md5File`, use the returned `Promise` e.g. by calling `.then(...)` on it.",
+      "tree": {
+        "sha": "b5501657dc69c1abbf679bee128d61aa04ac9420",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/b5501657dc69c1abbf679bee128d61aa04ac9420"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCAAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAl6JwhMUHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm/PxRAAvs0m58+1AenMpJktHlf2EOPH1+Rm\nmlrs9QJkJQ2Tt3Yx84d8gopByRf1lmGT1QcTRK6sIXftrtI737xujtQt5yGm1iCt\n+CrvL2zkJ2c5KnT1vIvdr+YPcs5NGiYZM+bv0zGcyH4caAwbqsWsG1l9GOFgCg3+\nsefv2HEo5q11p46N9t9l5NlmjOD3eIgiPoG7OOCaTOho+rnLM4On76ePHhla3h9U\ngiaBtLy25udHkhmiI0z4n1vjydNRtx/6IlRTrefETlNrSH8/fKYMAdjKqmdskOxj\nD705dPjhOqexMN4H6kWrfJSxTsy7XzI72CNMPgtgUDCqUrjfqEfZHsnijvUf67Rx\nQv0J5THRykdPcXgCUivHQ1LG2Z0eof56BzT3Yy9FIPoFsq2CW5RXeBGeVKOMm01S\nKtqAEZc4QiQLa95Iv2h6NCkCTJRQeb3P5zBvnfKFMxnocvad3OP+I98/yEM6bRM7\nhmk919OtVIpvBKydE/9sXbwGKPJ6zrM9dv5rlcTYXjQPtwUS4TyS9HsC04IokvHJ\nHyJVmTmIyk3VwldOArJX/6HxCDDLsNSZqz1dYmXRBTsRIxk36cDSEBxmIw05FKBX\n8iyetS++iAwNUxgC4kKSUquGcFE7rNnvDfdJLPazXJuBl6F0K+mNYSWVLsE5y+b6\ntQHOg+o+R432zmQ=\n=QNNG\n-----END PGP SIGNATURE-----",
+        "payload": "tree b5501657dc69c1abbf679bee128d61aa04ac9420\nparent 7a9d927b21faad78a8797c7ce1a2284992bd8f6c\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586085797 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1586086419 +0100\n\n💥 Remove support for callbacks\n\nMigration Guide:\n\nInstead of passing a callback to `md5File`, use the returned `Promise` e.g. by calling `.then(...)` on it.\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+    "html_url": "https://github.com/kodie/md5-file/commit/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/6cddc7ea8ba66b8e07ea627d91042cbd0c8c0413/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+        "html_url": "https://github.com/kodie/md5-file/commit/7a9d927b21faad78a8797c7ce1a2284992bd8f6c"
+      }
+    ]
+  },
+  {
+    "sha": "7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6N2E5ZDkyN2IyMWZhYWQ3OGE4Nzk3YzdjZTFhMjI4NDk5MmJkOGY2Yw==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:15:16Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:33:39Z"
+      },
+      "message": "🌹 Cleanup package metadata",
+      "tree": {
+        "sha": "e1ba3835dbc0ecc4fd460f8c4cd25defc8ca089b",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/e1ba3835dbc0ecc4fd460f8c4cd25defc8ca089b"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCAAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAl6JwhMUHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm+GYBAAvO4iB/TULt5+Ewe+A84eleNpKuuM\nM1XpAb+TSihp82BiLCz4iomzABQJYrwsw33MRJD/FE6NugSTHU7gIp+tLn+loC89\nVTalaQgQTL/ACzXnHHH+C2DvjQ1QjR7hBpa18w3v2FE9BzBWE4teYvoXkefmpUFJ\nqy/YkLNdmiATGdhVyVnNiWJP8KpUwpc1NVMM0FZc0ymYIDmGvgOvMakioZNrrLk8\nZfE2iuYEJ+rb6jXU3V9K/Q6RMmHFMRpQZK+629h5GwiIn2kfuPsDByDo+0aDUK9F\nsjAGpVtrtNSILG4mqMX8oM/C1d4q97wnJ1vm7Ph3Q4V8ZBFRqbbe7nJfgoPi9ITd\nPSOSWT0aHISnnrmhtGasBeWHPI1miLvl2E5htquXKPlUS8AW7rGCVqt5avqSKAlK\nL6GMRTFgm/TNFBypmymIterSz9wvSX5dtOcYzpH/5VGx27BnDUjecBPH4+5jEx/5\nFqVMqPsXo4LBskizBqeN6R6VSsFBKIKzHsaCZMTpSBVafxe0fmWBXwVdeyePHmwb\nvPJ91kLVgRozFGJ2Z9eRd8JfXpIVmHAI6cjnaXRqwC6FxZyOqdPHtltB3CUrRB1N\nIACuVXfJZr7afPCK3iPji5Gy78Vpp3f7NxYMc7rEJML1d/J6YCPhi1/UJE2zw3N2\nO5GwGc4lkkn3Mt8=\n=hPNE\n-----END PGP SIGNATURE-----",
+        "payload": "tree e1ba3835dbc0ecc4fd460f8c4cd25defc8ca089b\nparent c57a55c5ff08fe58ff70e29d784f96c9e3e9799e\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586085316 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1586086419 +0100\n\n🌹 Cleanup package metadata\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+    "html_url": "https://github.com/kodie/md5-file/commit/7a9d927b21faad78a8797c7ce1a2284992bd8f6c",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/7a9d927b21faad78a8797c7ce1a2284992bd8f6c/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+        "html_url": "https://github.com/kodie/md5-file/commit/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e"
+      }
+    ]
+  },
+  {
+    "sha": "c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6YzU3YTU1YzVmZjA4ZmU1OGZmNzBlMjlkNzg0Zjk2YzllM2U5Nzk5ZQ==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-04-05T11:10:38Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-04-05T11:10:38Z"
+      },
+      "message": "Merge pull request #26 from Richienb/merge-promise\n\nMerge promise support with callback function",
+      "tree": {
+        "sha": "db96ca029380ef87b1d6df767d0b1de894801ccf",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/db96ca029380ef87b1d6df767d0b1de894801ccf"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeibyuCRBK7hj4Ov3rIwAAdHIIAAEF871rjaWEBk0CO0GPtIrD\nluuvb2GEC43C7Be8n3Jm/9I9hVTJBVREzwksrnNzKcGJ5mDVP6/LlZ8L2QE7tc4b\nAa8r20bNOOCHMNH/0PF7KGTBEkaGvAgZ2S5xg9GD5h/9zRDCNMgqph1wF/6Y0FCz\nQGlEgdNdvzl+Gy74Q+0KXx1aGZzX+G7ahmo3EdeLaOh2xMWubvgZjayKmXatmmQg\n6IadhigBiGZ2NWpw+td4ESAQlk8Nw7jLffPb6JaK1I49rgBdswkjQVE3rSpRfm9a\nnx/p2nDYZ+8vZ68Xpviw33ow3GqTmB1jeOgk+Ak/MYIn/Klt5TTmGpZKAFuPso0=\n=2BKZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree db96ca029380ef87b1d6df767d0b1de894801ccf\nparent 19b0b85d11ae39d96d6cac975d2765a0cea9cfc9\nparent c4d348e500f19d71067a2208899992aece782422\nauthor Linus Unnebäck <linus@folkdatorn.se> 1586085038 +0100\ncommitter GitHub <noreply@github.com> 1586085038 +0100\n\nMerge pull request #26 from Richienb/merge-promise\n\nMerge promise support with callback function",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+    "html_url": "https://github.com/kodie/md5-file/commit/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/c57a55c5ff08fe58ff70e29d784f96c9e3e9799e/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+        "html_url": "https://github.com/kodie/md5-file/commit/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9"
+      },
+      {
+        "sha": "c4d348e500f19d71067a2208899992aece782422",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/c4d348e500f19d71067a2208899992aece782422",
+        "html_url": "https://github.com/kodie/md5-file/commit/c4d348e500f19d71067a2208899992aece782422"
+      }
+    ]
+  },
+  {
+    "sha": "c4d348e500f19d71067a2208899992aece782422",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6YzRkMzQ4ZTUwMGYxOWQ3MTA2N2EyMjA4ODk5OTkyYWVjZTc4MjQyMg==",
+    "commit": {
+      "author": {
+        "name": "Richie Bendall",
+        "email": "richiebendall@gmail.com",
+        "date": "2020-04-05T10:41:01Z"
+      },
+      "committer": {
+        "name": "Richie Bendall",
+        "email": "richiebendall@gmail.com",
+        "date": "2020-04-05T10:41:01Z"
+      },
+      "message": "Merge promise support with callback function\n\nSigned-off-by: Richie Bendall <richiebendall@gmail.com>",
+      "tree": {
+        "sha": "db96ca029380ef87b1d6df767d0b1de894801ccf",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/db96ca029380ef87b1d6df767d0b1de894801ccf"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/c4d348e500f19d71067a2208899992aece782422",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE1uCFVV53QQ6VUVo0lK4ay2YqKm0FAl6JtcUACgkQlK4ay2Yq\nKm3cOQ//eg8jYB2NTv1S3yo4Ycjx2a08EIz9mVhA0FNTeVSUg6gHZEtC6JmcaExN\nhLzNqA4RQyvG8ol/p6S7B4pcxH9sIBvV5iNOUEy236eKVcqeHqtvWj4MaWNc2nF0\nfrcNy+EfPx3Spaelyi6jQoGH+p/IBzaZC+CBQH5d8dDZ0CXgH6yuQ1oECF1Lvgb9\nsBGqre/Kg66ZxFEcEZrDmMXtm7/IzElURHrlRjXxfOZLjPEva7Y9w0S9GvVyopk3\ngw96zZCv7wYq7wdJm0uMb8N8tr9cttfwqQbD4t95gdrlVIXeQu7Fwz6+/oqa0j2G\nOyYQEMqEBe2dDK9y+W6zFCaAj17UkxJjlaYp0HuNvDDfZfDKURxs85LJEJ1++QrD\nDCWTnMpK2twQyh8EvBd4rFwIpAtIfVWrhXkyh3m4NmZco6KeVl98tzHj45FQ5R/7\nSMuSAde3jPrw6Oj1AeFcApeyPQ9R3oUZWvkk6ndp5H3zbh5ebB0bf7X7MlWGN2xn\ntEi+zhrpgLpB9ghoSuTIck64yHqaC0QCpbcFWrX4pbZRx2z6MeqcmmPDWoo9Zbox\n275vXXJnzppkzDZeEbXKHDq6zO8KfymDChxqJ17opqfT81/uGvmCLlSwwVDrty8O\n6BLUl8k9fUelPErPSicG+SNCvlpUSR0919QkO6sEjIdu0W/107o=\n=nrkx\n-----END PGP SIGNATURE-----",
+        "payload": "tree db96ca029380ef87b1d6df767d0b1de894801ccf\nparent 19b0b85d11ae39d96d6cac975d2765a0cea9cfc9\nauthor Richie Bendall <richiebendall@gmail.com> 1586083261 +1200\ncommitter Richie Bendall <richiebendall@gmail.com> 1586083261 +1200\n\nMerge promise support with callback function\n\nSigned-off-by: Richie Bendall <richiebendall@gmail.com>\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/c4d348e500f19d71067a2208899992aece782422",
+    "html_url": "https://github.com/kodie/md5-file/commit/c4d348e500f19d71067a2208899992aece782422",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/c4d348e500f19d71067a2208899992aece782422/comments",
+    "author": {
+      "login": "Richienb",
+      "id": 29491356,
+      "node_id": "MDQ6VXNlcjI5NDkxMzU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29491356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Richienb",
+      "html_url": "https://github.com/Richienb",
+      "followers_url": "https://api.github.com/users/Richienb/followers",
+      "following_url": "https://api.github.com/users/Richienb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Richienb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Richienb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Richienb/subscriptions",
+      "organizations_url": "https://api.github.com/users/Richienb/orgs",
+      "repos_url": "https://api.github.com/users/Richienb/repos",
+      "events_url": "https://api.github.com/users/Richienb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Richienb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Richienb",
+      "id": 29491356,
+      "node_id": "MDQ6VXNlcjI5NDkxMzU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29491356?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Richienb",
+      "html_url": "https://github.com/Richienb",
+      "followers_url": "https://api.github.com/users/Richienb/followers",
+      "following_url": "https://api.github.com/users/Richienb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Richienb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Richienb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Richienb/subscriptions",
+      "organizations_url": "https://api.github.com/users/Richienb/orgs",
+      "repos_url": "https://api.github.com/users/Richienb/repos",
+      "events_url": "https://api.github.com/users/Richienb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Richienb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+        "html_url": "https://github.com/kodie/md5-file/commit/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9"
+      }
+    ]
+  },
+  {
+    "sha": "19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MTliMGI4NWQxMWFlMzlkOTZkNmNhYzk3NWQyNzY1YTBjZWE5Y2ZjOQ==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2020-02-17T17:03:28Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-02-17T17:03:28Z"
+      },
+      "message": "Merge pull request #23 from BamButz/master\n\nTypeScript Declarations",
+      "tree": {
+        "sha": "50f4bd4fc6f76acb0ee175c3180cdef05efa021d",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/50f4bd4fc6f76acb0ee175c3180cdef05efa021d"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeSsdgCRBK7hj4Ov3rIwAAdHIIACX4AAtnT1doPD3SVU3pUOOJ\nu97eV2YVsbA6TMOuLjjGIrsBN4oOGSDIyK0es61tkOJODM7jlynKJXjE44+hsG0s\nZ4m/QwmFtetdQs8C4CaAabwgYkNd8d/jtS4JfcvKMb2LJee0kych10wt8td/6ryD\nsENN5xTTrEShbWtWZA3tb2c1pvIszrYbk/nx6CFUlE0iyrGN/AplFVgdorrbHug4\nKeCD8K2igN1oEfMLyOY4E+ocxUfWN9Vj6eUyYdiMMKKnbPj0rlbP06a4C8sPRxcu\nkKVZayxCH7IHtSN1X8u3Rj9MC5YcQ2pcCsJSUqzmAmbGmd/VCQO1iJFzNfTxGUA=\n=Nay/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 50f4bd4fc6f76acb0ee175c3180cdef05efa021d\nparent 079af00049751e6d16125a35c4cec88d0ee6d4b4\nparent 905216bdf4cfd9c8b0a7da40b617ac6afe9336cc\nauthor Linus Unnebäck <linus@folkdatorn.se> 1581959008 +0000\ncommitter GitHub <noreply@github.com> 1581959008 +0000\n\nMerge pull request #23 from BamButz/master\n\nTypeScript Declarations",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+    "html_url": "https://github.com/kodie/md5-file/commit/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/19b0b85d11ae39d96d6cac975d2765a0cea9cfc9/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "079af00049751e6d16125a35c4cec88d0ee6d4b4",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/079af00049751e6d16125a35c4cec88d0ee6d4b4",
+        "html_url": "https://github.com/kodie/md5-file/commit/079af00049751e6d16125a35c4cec88d0ee6d4b4"
+      },
+      {
+        "sha": "905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+        "html_url": "https://github.com/kodie/md5-file/commit/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc"
+      }
+    ]
+  },
+  {
+    "sha": "079af00049751e6d16125a35c4cec88d0ee6d4b4",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MDc5YWYwMDA0OTc1MWU2ZDE2MTI1YTM1YzRjZWM4OGQwZWU2ZDRiNA==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com",
+        "date": "2019-12-28T10:16:29Z"
+      },
+      "committer": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com",
+        "date": "2019-12-28T10:16:29Z"
+      },
+      "message": "update README, remove funding",
+      "tree": {
+        "sha": "80da16322197b527cf2b3b5d9ad77db749c61121",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/80da16322197b527cf2b3b5d9ad77db749c61121"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/079af00049751e6d16125a35c4cec88d0ee6d4b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unknown_key",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEdAPZDdKOwyslYhuiI6csBQFF76gFAl4HK30ACgkQI6csBQFF\n76i0XQ/+NB3/ILW2THw79I2rFgM5XAp2Ge7uMSoRtL0wZlHAM5r7fBo2uOi3nH+Z\nv23MMn825dM4FKFtWTnXgsz6R0ybrbBm1v048d7Ri3CmxH9xiKLBIcXRBhjm+m56\nAugB3wDhgpJk/ubYZQzVqj3xuth70t8Z/YGImcEd3sQyowaii0ugvTKMZ9G3aqGd\ntIifSlB3vwOuMyt1PLGxx/f7TjvCesR5dn5KhkzpNrjcpEnGSzHCj6/rb7e+I1pL\nM62yEVFEU144bwnkzU8zTPbmXd2EYOjrfQgmCjOe7VKqbtSO6A0j1NsF7sqkkVvB\nbraV9ZVVA+QSGRYhk4jz/j0/gF3JdmtZq7z875bIMsWmf98pTej6sOhmCG0VTayP\n1NzaGHM5rvWzXRZ1kVFa13mq73Tv7jLhAO9F5o5jkeSTlSxnQ66QxusXt/bonEp9\nviVHDVtemVFFxTOzjclm/8i9rOaimTUI/TGLyuIQo3iiFZ700iR3RZDMJ8P3TWdV\nMCAToX9DpARfEgd5qOAkDK6Paf64FhNF/jAkW2NGUHDhJxtlc6pODTm4HIH9amTx\nb0m5vHytJ64M2gTIDcyn7LfsFoSZkM+3euuUNkwOCeYexcR5i4eH8FA5Xy6LjueV\nqqtN0CgpTgjybxpxHQHrfzOy5DjTtrJ0OvZ83DJkzIxTssGFk1M=\n=MXYn\n-----END PGP SIGNATURE-----",
+        "payload": "tree 80da16322197b527cf2b3b5d9ad77db749c61121\nparent 476ad920e2826ee1f4b497b04c0d1478aaa8c395\nauthor Rory Bradford <rory@dysfunctionalprogramming.com> 1577528189 +0000\ncommitter Rory Bradford <rory@dysfunctionalprogramming.com> 1577528189 +0000\n\nupdate README, remove funding\n",
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/079af00049751e6d16125a35c4cec88d0ee6d4b4",
+    "html_url": "https://github.com/kodie/md5-file/commit/079af00049751e6d16125a35c4cec88d0ee6d4b4",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/079af00049751e6d16125a35c4cec88d0ee6d4b4/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+        "html_url": "https://github.com/kodie/md5-file/commit/476ad920e2826ee1f4b497b04c0d1478aaa8c395"
+      }
+    ]
+  },
+  {
+    "sha": "905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6OTA1MjE2YmRmNGNmZDljOGIwYTdkYTQwYjYxN2FjNmFmZTkzMzZjYw==",
+    "commit": {
+      "author": {
+        "name": "BamButz",
+        "email": "bambutz@cryptonica.de",
+        "date": "2019-12-23T09:28:20Z"
+      },
+      "committer": {
+        "name": "BamButz",
+        "email": "bambutz@cryptonica.de",
+        "date": "2019-12-23T09:30:34Z"
+      },
+      "message": "docs: add typescript declaration reference\n\nresolves #17",
+      "tree": {
+        "sha": "1e1aebef3fc419309b9e99dadf8ea2b6e45e3edb",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/1e1aebef3fc419309b9e99dadf8ea2b6e45e3edb"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+    "html_url": "https://github.com/kodie/md5-file/commit/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/905216bdf4cfd9c8b0a7da40b617ac6afe9336cc/comments",
+    "author": {
+      "login": "BamButz",
+      "id": 7022144,
+      "node_id": "MDQ6VXNlcjcwMjIxNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7022144?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/BamButz",
+      "html_url": "https://github.com/BamButz",
+      "followers_url": "https://api.github.com/users/BamButz/followers",
+      "following_url": "https://api.github.com/users/BamButz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/BamButz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/BamButz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/BamButz/subscriptions",
+      "organizations_url": "https://api.github.com/users/BamButz/orgs",
+      "repos_url": "https://api.github.com/users/BamButz/repos",
+      "events_url": "https://api.github.com/users/BamButz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/BamButz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "BamButz",
+      "id": 7022144,
+      "node_id": "MDQ6VXNlcjcwMjIxNDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7022144?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/BamButz",
+      "html_url": "https://github.com/BamButz",
+      "followers_url": "https://api.github.com/users/BamButz/followers",
+      "following_url": "https://api.github.com/users/BamButz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/BamButz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/BamButz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/BamButz/subscriptions",
+      "organizations_url": "https://api.github.com/users/BamButz/orgs",
+      "repos_url": "https://api.github.com/users/BamButz/repos",
+      "events_url": "https://api.github.com/users/BamButz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/BamButz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+        "html_url": "https://github.com/kodie/md5-file/commit/476ad920e2826ee1f4b497b04c0d1478aaa8c395"
+      }
+    ]
+  },
+  {
+    "sha": "476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NDc2YWQ5MjBlMjgyNmVlMWY0YjQ5N2IwNGMwZDE0NzhhYWE4YzM5NQ==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2019-06-01T15:18:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-06-01T15:18:44Z"
+      },
+      "message": "Create FUNDING.yml",
+      "tree": {
+        "sha": "21bef213914ce50095c6029280ec4fc564d5e133",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/21bef213914ce50095c6029280ec4fc564d5e133"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJc8pdUCRBK7hj4Ov3rIwAAdHIIAGwTVXhObV2xdC2skMeKGvga\nSbXh9v7md9djuFjNRjVFCOB/jQsOn9uOmtH9nBjcVcowOyU0ZuzeLmezArMoQ6fD\n84xNmGkgWv92ShocVc0oXRvDReSC/nbL6GYDGOioNH++dacMWSv9m9OrZCXoLdvA\n8hvH6UR+GUJVz/wI7RVmuzPMdi8Lej6Hvx3zOtlnKrYkq0de3KpmBK9jOqV8ml32\n1Uz1/veOH6X4Dn0KIR4OLa8iio+Puo5+otlI+RUNVzhD+IGp/0Z7kxjC89jO2FyL\nSVzDiJyfHMvk2zJJL3J09bsejiQT1v5NoQWxtlGHRtowoIZ7qHb9Fsrxd0FDcmw=\n=9JJ4\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 21bef213914ce50095c6029280ec4fc564d5e133\nparent 7c09759e515845b207469a32db83ac04c9f156a1\nauthor Rory Bradford <roryrjb@gmail.com> 1559402324 +0100\ncommitter GitHub <noreply@github.com> 1559402324 +0100\n\nCreate FUNDING.yml",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+    "html_url": "https://github.com/kodie/md5-file/commit/476ad920e2826ee1f4b497b04c0d1478aaa8c395",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/476ad920e2826ee1f4b497b04c0d1478aaa8c395/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c09759e515845b207469a32db83ac04c9f156a1",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/7c09759e515845b207469a32db83ac04c9f156a1",
+        "html_url": "https://github.com/kodie/md5-file/commit/7c09759e515845b207469a32db83ac04c9f156a1"
+      }
+    ]
+  },
+  {
+    "sha": "7c09759e515845b207469a32db83ac04c9f156a1",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6N2MwOTc1OWU1MTU4NDViMjA3NDY5YTMyZGI4M2FjMDRjOWYxNTZhMQ==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2018-04-04T14:29:38Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2018-04-04T14:29:38Z"
+      },
+      "message": "4.0.0",
+      "tree": {
+        "sha": "2e93212538894bc65c2ac4acba9b23e4221cbf9f",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/2e93212538894bc65c2ac4acba9b23e4221cbf9f"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/7c09759e515845b207469a32db83ac04c9f156a1",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQJIBAABCgAyFiEEGVAiYwRM3WarYwjjznDOrpwPpm8FAlrE4VIUHGxpbnVzQGZv\nbGtkYXRvcm4uc2UACgkQznDOrpwPpm+3XhAAxA3zNDTpsA4Mq+g+tC8BspvIHUkS\n8o5BLsQmYg+RYoNRuj61w57piwoAJiscPyO1nSxE0MmFoKNT5Pml1q68NzxAkkuO\nvxTHeFBJH+cNdGboVewH3gk7sZ4QA3vWqnKJSkZsOfPmtrgjRvYXzbUbdgVSZhAF\nsysz6OGOgO/RbEE6oc9Ou7s9XkEvz8+8HdJlFHHJ3JivuHQX9EkLSPav96N+6tTg\nKKak/mLDMai4RlitR7tfB/4ubCf7EQk03YJau70SdcornCGpFr2wIfuEodDJmu0D\nuBJ8WQnssxO2R2+VlDJ/eHsjIk2m2wBrvK+PzBPf+qdpjZ+Cc9cukpvGHhVgGSnD\nVKmqAZcyRFEOt7s03xd2xrV/3gcjSxqWGUTx6EE6kbIY5+o9clqG3I7pmGuUsbDa\nHzu25wTw+EPbFYeBfx2Gw+/I/xZzjMSr6RXVmQ51EOR3ZtWpniD8j+JQrnLKeDyf\nlMlWYvP/Eoc3+giPzOMDKgbiVLsEq0EVxCNuCM+8F6JNhSO9FUxkyukzKJx3tsXQ\njiUL0LTOtCV5eDV4yWJYrBCosfUzkbWzLLb9U11GCpISUK04wgwmbJpZ3ocKLCq4\n72Yqo47iFzCPyQqvGEYWJXmBN8A8A4WB9FOzfid5yfc5WdNeanbG6psYvNOpyder\nZDSdx9Xp2r7PhY0=\n=g4/j\n-----END PGP SIGNATURE-----",
+        "payload": "tree 2e93212538894bc65c2ac4acba9b23e4221cbf9f\nparent 4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68\nauthor Linus Unnebäck <linus@folkdatorn.se> 1522852178 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1522852178 +0100\n\n4.0.0\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/7c09759e515845b207469a32db83ac04c9f156a1",
+    "html_url": "https://github.com/kodie/md5-file/commit/7c09759e515845b207469a32db83ac04c9f156a1",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/7c09759e515845b207469a32db83ac04c9f156a1/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+        "html_url": "https://github.com/kodie/md5-file/commit/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68"
+      }
+    ]
+  },
+  {
+    "sha": "4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NGY3ZDIxZGI0ZWE5ODZkYWZlNmUzNTJkMDY5YzZjYzdhZDVhN2Y2OA==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2018-04-04T14:29:11Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-04-04T14:29:11Z"
+      },
+      "message": "Merge pull request #19 from realityking/node-4.5\n\nRequire Node.js >= 6.0 to drop the dependency on buffer-alloc",
+      "tree": {
+        "sha": "1db8d54e80147238dd65babe0876b377045ddb53",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/1db8d54e80147238dd65babe0876b377045ddb53"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJaxOE3CRBK7hj4Ov3rIwAAdHIIAG2Ui6lMIl11creq4fKWENzL\n7Y7rZSJOGR452AlzrfRSiKoZsAY306+lsheymXpliUWEvNQ1OIoTK7wH/kYLOuev\n5B1fuT6qN5X4ROFSnsAmthKZ0gSLqYzx0GhHn1SacWrNX97fIw7m4nPRIi47kp9X\ncWF6S/XCbi6ecZ3wP7RVwpBNvWO8v2VlH6dJk8MYqzyCAmOJIRs6lGLDY9Ux8V9Q\nIDQsB4M6+NoB92bSlOmZpt3YEnar0lvrdp8qXtz1rrjCtEmvPtbNhHkb4FWNi0TD\n8yYES5uf2Nh/AeBlknVdgngqGvkZSaFS2nOO5BuRZbQZdf9ghSuJqe450vYRGXU=\n=ky9v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1db8d54e80147238dd65babe0876b377045ddb53\nparent 14127a4a31750301f88fa5fe1d02c26ad465323e\nparent f4ed4ca0e38e506c3720523ccdc4bed8206d595c\nauthor Linus Unnebäck <linus@folkdatorn.se> 1522852151 +0100\ncommitter GitHub <noreply@github.com> 1522852151 +0100\n\nMerge pull request #19 from realityking/node-4.5\n\nRequire Node.js >= 6.0 to drop the dependency on buffer-alloc",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+    "html_url": "https://github.com/kodie/md5-file/commit/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/4f7d21db4ea986dafe6e352d069c6cc7ad5a7f68/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "14127a4a31750301f88fa5fe1d02c26ad465323e",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/14127a4a31750301f88fa5fe1d02c26ad465323e",
+        "html_url": "https://github.com/kodie/md5-file/commit/14127a4a31750301f88fa5fe1d02c26ad465323e"
+      },
+      {
+        "sha": "f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+        "html_url": "https://github.com/kodie/md5-file/commit/f4ed4ca0e38e506c3720523ccdc4bed8206d595c"
+      }
+    ]
+  },
+  {
+    "sha": "f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZjRlZDRjYTBlMzhlNTA2YzM3MjA1MjNjY2RjNGJlZDgyMDZkNTk1Yw==",
+    "commit": {
+      "author": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-02-21T00:59:54Z"
+      },
+      "committer": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-04-04T14:09:59Z"
+      },
+      "message": "Convert all variables to let/const",
+      "tree": {
+        "sha": "1db8d54e80147238dd65babe0876b377045ddb53",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/1db8d54e80147238dd65babe0876b377045ddb53"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+    "html_url": "https://github.com/kodie/md5-file/commit/f4ed4ca0e38e506c3720523ccdc4bed8206d595c",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/f4ed4ca0e38e506c3720523ccdc4bed8206d595c/comments",
+    "author": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d19856539f4f76734eb5d5feec13e6304d995f9b",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/d19856539f4f76734eb5d5feec13e6304d995f9b",
+        "html_url": "https://github.com/kodie/md5-file/commit/d19856539f4f76734eb5d5feec13e6304d995f9b"
+      }
+    ]
+  },
+  {
+    "sha": "d19856539f4f76734eb5d5feec13e6304d995f9b",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZDE5ODU2NTM5ZjRmNzY3MzRlYjVkNWZlZWMxM2U2MzA0ZDk5NWY5Yg==",
+    "commit": {
+      "author": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-02-21T01:00:32Z"
+      },
+      "committer": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-04-04T14:09:59Z"
+      },
+      "message": "Remove a feature check for Symbol that is no longer necessary.",
+      "tree": {
+        "sha": "480be0f5df280792766cb4085966ce18f6ba6eb9",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/480be0f5df280792766cb4085966ce18f6ba6eb9"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/d19856539f4f76734eb5d5feec13e6304d995f9b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/d19856539f4f76734eb5d5feec13e6304d995f9b",
+    "html_url": "https://github.com/kodie/md5-file/commit/d19856539f4f76734eb5d5feec13e6304d995f9b",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/d19856539f4f76734eb5d5feec13e6304d995f9b/comments",
+    "author": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5863e11e1f8cd3378550d8aada531658c833e25e",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/5863e11e1f8cd3378550d8aada531658c833e25e",
+        "html_url": "https://github.com/kodie/md5-file/commit/5863e11e1f8cd3378550d8aada531658c833e25e"
+      }
+    ]
+  },
+  {
+    "sha": "5863e11e1f8cd3378550d8aada531658c833e25e",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NTg2M2UxMWUxZjhjZDMzNzg1NTBkOGFhZGE1MzE2NThjODMzZTI1ZQ==",
+    "commit": {
+      "author": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-02-21T00:47:25Z"
+      },
+      "committer": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-04-04T14:09:59Z"
+      },
+      "message": "Drop the dependency on buffer-alloc in favor of the native Buffer.alloc",
+      "tree": {
+        "sha": "e6284ecab7308b557dc8687566f84ecad5663ad2",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/e6284ecab7308b557dc8687566f84ecad5663ad2"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/5863e11e1f8cd3378550d8aada531658c833e25e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/5863e11e1f8cd3378550d8aada531658c833e25e",
+    "html_url": "https://github.com/kodie/md5-file/commit/5863e11e1f8cd3378550d8aada531658c833e25e",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/5863e11e1f8cd3378550d8aada531658c833e25e/comments",
+    "author": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+        "html_url": "https://github.com/kodie/md5-file/commit/46c42ff64639e26ede7d6a358056c90d5cf7ef4b"
+      }
+    ]
+  },
+  {
+    "sha": "46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NDZjNDJmZjY0NjM5ZTI2ZWRlN2Q2YTM1ODA1NmM5MGQ1Y2Y3ZWY0Yg==",
+    "commit": {
+      "author": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-02-21T00:46:50Z"
+      },
+      "committer": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-04-04T14:09:59Z"
+      },
+      "message": "Require Node.js 6.0",
+      "tree": {
+        "sha": "0ddecb864dc760d4a67331775c276ee8ae34e109",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/0ddecb864dc760d4a67331775c276ee8ae34e109"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+    "html_url": "https://github.com/kodie/md5-file/commit/46c42ff64639e26ede7d6a358056c90d5cf7ef4b",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/46c42ff64639e26ede7d6a358056c90d5cf7ef4b/comments",
+    "author": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "14127a4a31750301f88fa5fe1d02c26ad465323e",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/14127a4a31750301f88fa5fe1d02c26ad465323e",
+        "html_url": "https://github.com/kodie/md5-file/commit/14127a4a31750301f88fa5fe1d02c26ad465323e"
+      }
+    ]
+  },
+  {
+    "sha": "14127a4a31750301f88fa5fe1d02c26ad465323e",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MTQxMjdhNGEzMTc1MDMwMWY4OGZhNWZlMWQwMmMyNmFkNDY1MzIzZQ==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2018-04-04T14:08:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2018-04-04T14:08:55Z"
+      },
+      "message": "Merge pull request #21 from realityking/dev-dependencies\n\nUpdate dev dependencies to their newest version",
+      "tree": {
+        "sha": "1400b66cb118f858bf86fb4d6a69303f888b6738",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/1400b66cb118f858bf86fb4d6a69303f888b6738"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/14127a4a31750301f88fa5fe1d02c26ad465323e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJaxNx3CRBK7hj4Ov3rIwAAdHIIABaS9wQcoS7FyycqxgiDVKVG\n7RxbKGuIaZisRoG1N8Om46mfBt9YMtqN7zG63vuaFSt2pbHSzyUVx4m8WA9NYWaC\ntl14Dkme5BgytPp+uXjAeqzXUAD5MZe6ggaUnQuGHfD7qzqxl5Eqft2ewFskNbsN\ndlfwi0q2AZTixlZ1b5ALkUHC2GVUuxrpuJ7AAdlwYo+aejjlqwb1UtrRvdDNDaOg\naP1SZ+/bR35vjHR+2zD0p53HcMTTxNo5zwjbnMtPkjCx4QChPYfO1pAaRtc0RWyn\nh0Hg2FYFLrkLvvU+47lhh9wrBGyTUSUpEVHvlvXsmhVI3rB3bi9Ozgdv/JBIMtI=\n=9x2U\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 1400b66cb118f858bf86fb4d6a69303f888b6738\nparent e3956df5f9e1f21317e781c399cffde354fb9cce\nparent 2b184c02dfb09adb423b1289ba4e31284eb0424b\nauthor Linus Unnebäck <linus@folkdatorn.se> 1522850935 +0100\ncommitter GitHub <noreply@github.com> 1522850935 +0100\n\nMerge pull request #21 from realityking/dev-dependencies\n\nUpdate dev dependencies to their newest version",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/14127a4a31750301f88fa5fe1d02c26ad465323e",
+    "html_url": "https://github.com/kodie/md5-file/commit/14127a4a31750301f88fa5fe1d02c26ad465323e",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/14127a4a31750301f88fa5fe1d02c26ad465323e/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e3956df5f9e1f21317e781c399cffde354fb9cce",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/e3956df5f9e1f21317e781c399cffde354fb9cce",
+        "html_url": "https://github.com/kodie/md5-file/commit/e3956df5f9e1f21317e781c399cffde354fb9cce"
+      },
+      {
+        "sha": "2b184c02dfb09adb423b1289ba4e31284eb0424b",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/2b184c02dfb09adb423b1289ba4e31284eb0424b",
+        "html_url": "https://github.com/kodie/md5-file/commit/2b184c02dfb09adb423b1289ba4e31284eb0424b"
+      }
+    ]
+  },
+  {
+    "sha": "2b184c02dfb09adb423b1289ba4e31284eb0424b",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MmIxODRjMDJkZmIwOWFkYjQyM2IxMjg5YmE0ZTMxMjg0ZWIwNDI0Yg==",
+    "commit": {
+      "author": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-02-21T00:58:43Z"
+      },
+      "committer": {
+        "name": "Rouven Weßling",
+        "email": "rouven@contentful.com",
+        "date": "2018-04-04T13:51:34Z"
+      },
+      "message": "Update dev dependencies to their newest version",
+      "tree": {
+        "sha": "1400b66cb118f858bf86fb4d6a69303f888b6738",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/1400b66cb118f858bf86fb4d6a69303f888b6738"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/2b184c02dfb09adb423b1289ba4e31284eb0424b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/2b184c02dfb09adb423b1289ba4e31284eb0424b",
+    "html_url": "https://github.com/kodie/md5-file/commit/2b184c02dfb09adb423b1289ba4e31284eb0424b",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/2b184c02dfb09adb423b1289ba4e31284eb0424b/comments",
+    "author": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "realityking",
+      "id": 628508,
+      "node_id": "MDQ6VXNlcjYyODUwOA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/628508?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/realityking",
+      "html_url": "https://github.com/realityking",
+      "followers_url": "https://api.github.com/users/realityking/followers",
+      "following_url": "https://api.github.com/users/realityking/following{/other_user}",
+      "gists_url": "https://api.github.com/users/realityking/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/realityking/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/realityking/subscriptions",
+      "organizations_url": "https://api.github.com/users/realityking/orgs",
+      "repos_url": "https://api.github.com/users/realityking/repos",
+      "events_url": "https://api.github.com/users/realityking/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/realityking/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e3956df5f9e1f21317e781c399cffde354fb9cce",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/e3956df5f9e1f21317e781c399cffde354fb9cce",
+        "html_url": "https://github.com/kodie/md5-file/commit/e3956df5f9e1f21317e781c399cffde354fb9cce"
+      }
+    ]
+  },
+  {
+    "sha": "e3956df5f9e1f21317e781c399cffde354fb9cce",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZTM5NTZkZjVmOWUxZjIxMzE3ZTc4MWMzOTljZmZkZTM1NGZiOWNjZQ==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-09-22T14:54:19Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-09-22T14:54:19Z"
+      },
+      "message": "3.2.3",
+      "tree": {
+        "sha": "47ad10b78133ab624f5fe3e0447e88cb73763da7",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/47ad10b78133ab624f5fe3e0447e88cb73763da7"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/e3956df5f9e1f21317e781c399cffde354fb9cce",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIcBAABCgAGBQJZxSQcAAoJEM5wzq6cD6ZvjS0QALWXt8brUiwZ5X0ny+Grh5N3\ny+yJJZS/ybi2Tb1kpVBF7fMQtbfqj32s/4VbOzEZ14AdYxSds/S19Ui//xldPbbS\nUguVtkGSX/O7Fp//Nqk9sdrIOLYPg6tPNphB7oA9T96CjNFdusYdVHLNiCkXXcrK\nlZFQfoc4VOBcaeywWKVFLIvjTYs/svItOZqDoUFcxKLuTBYyduuJ64EDREFcoxsf\n2ohKao2smEpBKN6i2a8fAbfh8qiDSvyaqcNW/EMEquVV5jV2w+PoQqEhnKjn7qtq\nLAtBQ3+u8iLRbjcl471+L2eMfh3+NNczWJ2soBCxBofF58mksnv+yaDcxT1GP1ZL\noUhRHFFTJdcIt6BDfxl/zh9yPUOUmRxLWvafGNErrfbIwnOyVO2ZEWw7M8OmxthZ\nMXAezO0dWuDobKyxqkBPwcD/uk+pWezYt38Hbpw+5x6oU1UGaP2yW6VCU15zndtR\nwlCU8f1acD350yMahY/APX4UH0VKpt7eau52dfaA5psgZv2p8YHsuC2JXIH27b+M\nBGYFcvQieVDDCFcKzeRp5MUeemuWY3ORUPW56WqKLNfQuSTKu+BuEyI3AkHQXKor\nN3Z0D9r+LMcU0dRYaVJEY8T20D+PkDjK8u3eFW0yGTddpWWGfLdQQDjbFZ5P+wdi\nQ8AcjjfnldOwtRAUHAMr\n=UIxx\n-----END PGP SIGNATURE-----",
+        "payload": "tree 47ad10b78133ab624f5fe3e0447e88cb73763da7\nparent da0d29c418c0b955eefc1d0e3a9d9b83a191b478\nauthor Linus Unnebäck <linus@folkdatorn.se> 1506092059 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1506092059 +0100\n\n3.2.3\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/e3956df5f9e1f21317e781c399cffde354fb9cce",
+    "html_url": "https://github.com/kodie/md5-file/commit/e3956df5f9e1f21317e781c399cffde354fb9cce",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/e3956df5f9e1f21317e781c399cffde354fb9cce/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+        "html_url": "https://github.com/kodie/md5-file/commit/da0d29c418c0b955eefc1d0e3a9d9b83a191b478"
+      }
+    ]
+  },
+  {
+    "sha": "da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZGEwZDI5YzQxOGMwYjk1NWVlZmMxZDBlM2E5ZDliODNhMTkxYjQ3OA==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-09-22T14:53:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2017-09-22T14:53:51Z"
+      },
+      "message": "Merge pull request #16 from roryrjb/split-cli\n\nSplit CLI to separate file",
+      "tree": {
+        "sha": "275775d011b553b84ab7ee91da4ebb5d6db60895",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/275775d011b553b84ab7ee91da4ebb5d6db60895"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+    "html_url": "https://github.com/kodie/md5-file/commit/da0d29c418c0b955eefc1d0e3a9d9b83a191b478",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/da0d29c418c0b955eefc1d0e3a9d9b83a191b478/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+        "html_url": "https://github.com/kodie/md5-file/commit/27a5f602dfd4dfe61c7718d27bb69d74320bc9db"
+      },
+      {
+        "sha": "2e59275d7476dcb5229e8deaf1726d1d8726f273",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/2e59275d7476dcb5229e8deaf1726d1d8726f273",
+        "html_url": "https://github.com/kodie/md5-file/commit/2e59275d7476dcb5229e8deaf1726d1d8726f273"
+      }
+    ]
+  },
+  {
+    "sha": "2e59275d7476dcb5229e8deaf1726d1d8726f273",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MmU1OTI3NWQ3NDc2ZGNiNTIyOWU4ZGVhZjE3MjZkMWQ4NzI2ZjI3Mw==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-09-10T09:51:29Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-09-10T09:51:29Z"
+      },
+      "message": "Split CLI to separate file",
+      "tree": {
+        "sha": "275775d011b553b84ab7ee91da4ebb5d6db60895",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/275775d011b553b84ab7ee91da4ebb5d6db60895"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/2e59275d7476dcb5229e8deaf1726d1d8726f273",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIcBAABCgAGBQJZtQshAAoJEM5wzq6cD6Zv3soQAIiPQrWpUCmFkMotVijW9e3i\nyz5c9vWFwhYkTbr5B9286nmLRKkwXQEVjAuY10Tz31SRyBQRCmLaWlnTRPMXc7CB\nFvn4HGdbrglRbN9glEn4ed4jShg6JgTw1agpwZgrwlPG310qcuYTSTqGEqhErmpD\nTT/IPHR+WnCc/nmxlrEBU4NHhAVtz3sMVSLZFC/kbrNRdT/OrXHje5gGFP3XUN8/\nTtKgmmM1Q/5NU+ag95B2tySJK95NSpwiKiklkHbtZEH1hM6yJMYiM81yXeJrhK6+\nZVso4Ai0k7VL+jwTc9ulyShhpIDJpCya3p66xKmjkmWAbCN4KzTVvVEVFzbtfkzX\n/E7h1rhcyOIOdd8gnbtGBKf/tS6Pcj8LA5qQ4O/MB6sHqmG1bpQXvSpPgNQJ4i96\niY2hju0/6KRmP7YVMRJ4aKb+v4BMX12MychgIbpAP4hpsF+op1Z374HqRsuAKmo6\nQKBupNx4p2UFLY4skZcFw81dPkGYbdfaHrd4TvcusaA/zW+9miSIuMv1ZSGaxhvD\nxdSO+X6VbA4ROX4GFgMHjGAlP7o5UNbY+PKpoQ6diOXmnjeuC5Wfe0OjBpYS3BaK\nDVm70tvZfN7lQdCyHLgB14NhYR2+FmF/KUreXXfvKvCvjXEhjjExTMt41cgl1HLq\nnTXwPb+Zr7r5dT1oafDr\n=O/qr\n-----END PGP SIGNATURE-----",
+        "payload": "tree 275775d011b553b84ab7ee91da4ebb5d6db60895\nparent 27a5f602dfd4dfe61c7718d27bb69d74320bc9db\nauthor Linus Unnebäck <linus@folkdatorn.se> 1505037089 +0200\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1505037089 +0200\n\nSplit CLI to separate file\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/2e59275d7476dcb5229e8deaf1726d1d8726f273",
+    "html_url": "https://github.com/kodie/md5-file/commit/2e59275d7476dcb5229e8deaf1726d1d8726f273",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/2e59275d7476dcb5229e8deaf1726d1d8726f273/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+        "html_url": "https://github.com/kodie/md5-file/commit/27a5f602dfd4dfe61c7718d27bb69d74320bc9db"
+      }
+    ]
+  },
+  {
+    "sha": "27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MjdhNWY2MDJkZmQ0ZGZlNjFjNzcxOGQyN2JiNjlkNzQzMjBiYzlkYg==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-08-15T08:10:48Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-08-15T08:10:48Z"
+      },
+      "message": "3.2.2",
+      "tree": {
+        "sha": "dcf2bd5912c01d3350debc758541ed5c599a4cfd",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/dcf2bd5912c01d3350debc758541ed5c599a4cfd"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIcBAABCgAGBQJZkqyIAAoJEM5wzq6cD6ZvkE8P+QFf+NbEUf8uArgOlY6+neRK\nurP3YCDbmwpfgpSUTTzm+2rr6ROxIbnx4ayIAxMdDOn6mj31mtWTBE2CJP13mw4Z\naC8vnFzRGndZ2fP7+/rFnxrLVGoOZwuz3me+aFYEAyNM+cchOG1fd5IzAI6vQGmw\nIUpneZd8NeVQuJMQFqOhA/FmRnfMSY3btrmR6Wohjfyphl3cY3+LdUWwJjumYJB9\n1Qglf2kcwtpJC+ZNFzF1Z2h4RfW6lwks8J5w4SDRSx2VeLSwKX6BmJ67EYle4S9l\nV3byE1RDKxl84HdxfJg3GMxXAqtc7y5fF3eefzX7fFXQR9UTL/Hcgr7idMVVomEm\nWdG/f4gk1UbUMdJZc8NuA7kSNz2nGEnKSL8RZs15rdq9p8BzgKbGLKoPxg6rOY5X\nHJthcLYFtqqXNEkNHksGkzKEjBDQRRWAoLy8/7ZsRIvZwcA2dAbLN42rlCRLmUII\nvFniISooMunyiq0BXPThwuOYUbcIZdqKwZWSGnmoMy/hVbieFe1DKbhDyP4DM1UV\nxCFnHkd6GPMMbFd41hvt0rUh/9Qdq/TMMGyTXGxaIyYQ4eiTE9btM1fPXMDaqV8J\nl0RT92iAmVa/0LnUZfmLNOtMQdyzpmtfRllBA8uxOyQ0w5xdk3TeWvArsJ4tkbF0\nsa77/nvi100D33WVBQ6F\n=ewMX\n-----END PGP SIGNATURE-----",
+        "payload": "tree dcf2bd5912c01d3350debc758541ed5c599a4cfd\nparent 5ea1bf0bd6a957453cb330e31488e17b62bf9270\nauthor Linus Unnebäck <linus@folkdatorn.se> 1502784648 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1502784648 +0100\n\n3.2.2\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+    "html_url": "https://github.com/kodie/md5-file/commit/27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+        "html_url": "https://github.com/kodie/md5-file/commit/5ea1bf0bd6a957453cb330e31488e17b62bf9270"
+      }
+    ]
+  },
+  {
+    "sha": "5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6NWVhMWJmMGJkNmE5NTc0NTNjYjMzMGUzMTQ4OGUxN2I2MmJmOTI3MA==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-08-15T08:08:50Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2017-08-15T08:08:50Z"
+      },
+      "message": "Merge pull request #14 from roryrjb/restore-compat\n\nRestore compatibility with Node.js 0.10 and up",
+      "tree": {
+        "sha": "29b404eb5871a4e421492daeb6ad3dcd933ac548",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/29b404eb5871a4e421492daeb6ad3dcd933ac548"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+    "html_url": "https://github.com/kodie/md5-file/commit/5ea1bf0bd6a957453cb330e31488e17b62bf9270",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/5ea1bf0bd6a957453cb330e31488e17b62bf9270/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+        "html_url": "https://github.com/kodie/md5-file/commit/e8201ed1bbf81827117cdedb18aa9610b257d0c0"
+      },
+      {
+        "sha": "113cfbf437846ebf096b7193c6cf89da7f0c108b",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/113cfbf437846ebf096b7193c6cf89da7f0c108b",
+        "html_url": "https://github.com/kodie/md5-file/commit/113cfbf437846ebf096b7193c6cf89da7f0c108b"
+      }
+    ]
+  },
+  {
+    "sha": "113cfbf437846ebf096b7193c6cf89da7f0c108b",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6MTEzY2ZiZjQzNzg0NmViZjA5NmI3MTkzYzZjZjg5ZGE3ZjBjMTA4Yg==",
+    "commit": {
+      "author": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-08-15T07:43:19Z"
+      },
+      "committer": {
+        "name": "Linus Unnebäck",
+        "email": "linus@folkdatorn.se",
+        "date": "2017-08-15T07:43:19Z"
+      },
+      "message": "Restore compatibility with Node.js 0.10 and up",
+      "tree": {
+        "sha": "29b404eb5871a4e421492daeb6ad3dcd933ac548",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/29b404eb5871a4e421492daeb6ad3dcd933ac548"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/113cfbf437846ebf096b7193c6cf89da7f0c108b",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIcBAABCgAGBQJZkqYYAAoJEM5wzq6cD6Zv228QAKtBzYwMqYV35Bn2KL/LYoMX\ntSQovFIKuRhMI81OKc3FTFiciiHDsjPXyiFNgChlC9KU7Yu4FhxD5kk5Xlp7EFwl\nFC6mfzDV8dhqOdUrY0X1veV+S5p2U919ZDSHIUa4WWJb1XThmQXlFzuOhlH/DRsW\nkINzSupZSDZvGpI0rjRUYZlUCOdUwkGlypYL8dSb9o2WJNgyNrn47fv9LVWkKTuE\nu8yO3JjnWiQ/QxckIDBx2ngTFx8mzaNJE63yD1jQte0kFnQ7ukhS2WQ4mdg+Cg4G\nj+0irvOdeBEBGj9eCopi+5u7BZQJ0wMY2DIWmq6CI8w4+/0I7XW0fWOuK3eSLVZl\nnh5+HFuR6MWS0fJKnzPjuRtYUyEA6phIkuqHqg/JVmf8phXrQ573V6Mc/LPfri0W\nwce2NKxzp0M/M8A7+XZI5gapn/97NYGxLf1JIzpJ3Po0mFl8Cf767e+Qni7EPxqQ\n0xJDpIAxXEFWNAnXIlb4+yS2JVnniYf7ekiU7n6J9jXD6mWehR/Ftow23h2a6lUt\nfILEZCc0RXGduD1p2lRdB2bkb8lXKIOoZKF/1JI8R9O6P/aFj3vi63MqnNp+dNve\nH923PsgrEHwuvDnG0HsW5D0P9DrfRmqgFaylllpT3Fu9k9SIyKJKn1MKC4xfLLfV\nzpJvLjanqi5+Y9lkcMZA\n=n795\n-----END PGP SIGNATURE-----",
+        "payload": "tree 29b404eb5871a4e421492daeb6ad3dcd933ac548\nparent e8201ed1bbf81827117cdedb18aa9610b257d0c0\nauthor Linus Unnebäck <linus@folkdatorn.se> 1502782999 +0100\ncommitter Linus Unnebäck <linus@folkdatorn.se> 1502782999 +0100\n\nRestore compatibility with Node.js 0.10 and up\n",
+        "verified_at": "2024-11-06T03:00:09Z"
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/113cfbf437846ebf096b7193c6cf89da7f0c108b",
+    "html_url": "https://github.com/kodie/md5-file/commit/113cfbf437846ebf096b7193c6cf89da7f0c108b",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/113cfbf437846ebf096b7193c6cf89da7f0c108b/comments",
+    "author": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "LinusU",
+      "id": 189580,
+      "node_id": "MDQ6VXNlcjE4OTU4MA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/189580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LinusU",
+      "html_url": "https://github.com/LinusU",
+      "followers_url": "https://api.github.com/users/LinusU/followers",
+      "following_url": "https://api.github.com/users/LinusU/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LinusU/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LinusU/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LinusU/subscriptions",
+      "organizations_url": "https://api.github.com/users/LinusU/orgs",
+      "repos_url": "https://api.github.com/users/LinusU/repos",
+      "events_url": "https://api.github.com/users/LinusU/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LinusU/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+        "html_url": "https://github.com/kodie/md5-file/commit/e8201ed1bbf81827117cdedb18aa9610b257d0c0"
+      }
+    ]
+  },
+  {
+    "sha": "e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZTgyMDFlZDFiYmY4MTgyNzExN2NkZWRiMThhYTk2MTBiMjU3ZDBjMA==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-15T07:19:08Z"
+      },
+      "committer": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-15T07:20:10Z"
+      },
+      "message": "node >= 4.5.0 requirement due to Buffer.alloc",
+      "tree": {
+        "sha": "bc836b1e5d9ec06d3ee337a55d8a2623d3a428c1",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/bc836b1e5d9ec06d3ee337a55d8a2623d3a428c1"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+    "html_url": "https://github.com/kodie/md5-file/commit/e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/e8201ed1bbf81827117cdedb18aa9610b257d0c0/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e420c29e666414807de59cb07be3780b688ec0df",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/e420c29e666414807de59cb07be3780b688ec0df",
+        "html_url": "https://github.com/kodie/md5-file/commit/e420c29e666414807de59cb07be3780b688ec0df"
+      }
+    ]
+  },
+  {
+    "sha": "e420c29e666414807de59cb07be3780b688ec0df",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6ZTQyMGMyOWU2NjY0MTQ4MDdkZTU5Y2IwN2JlMzc4MGI2ODhlYzBkZg==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-14T19:48:05Z"
+      },
+      "committer": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-14T19:48:05Z"
+      },
+      "message": "new Buffer -> Buffer.alloc, bump version",
+      "tree": {
+        "sha": "764aa361abfcf8da8e349b2829efb49112248ea1",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/764aa361abfcf8da8e349b2829efb49112248ea1"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/e420c29e666414807de59cb07be3780b688ec0df",
+      "comment_count": 4,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/e420c29e666414807de59cb07be3780b688ec0df",
+    "html_url": "https://github.com/kodie/md5-file/commit/e420c29e666414807de59cb07be3780b688ec0df",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/e420c29e666414807de59cb07be3780b688ec0df/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+        "html_url": "https://github.com/kodie/md5-file/commit/8ec319653b57cbadcfa6b56b2471b4e25268e04e"
+      }
+    ]
+  },
+  {
+    "sha": "8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6OGVjMzE5NjUzYjU3Y2JhZGNmYTZiNTZiMjQ3MWI0ZTI1MjY4ZTA0ZQ==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-14T19:44:43Z"
+      },
+      "committer": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-14T19:44:43Z"
+      },
+      "message": "Merge branch 'master' of github.com:roryrjb/md5-file",
+      "tree": {
+        "sha": "aac3b0cdbebd3e7e95c30e23a9108aead0e208f3",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/aac3b0cdbebd3e7e95c30e23a9108aead0e208f3"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+    "html_url": "https://github.com/kodie/md5-file/commit/8ec319653b57cbadcfa6b56b2471b4e25268e04e",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/8ec319653b57cbadcfa6b56b2471b4e25268e04e/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "30b710e5e799741a5b5c3e1a78f8378508f87f9c",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/30b710e5e799741a5b5c3e1a78f8378508f87f9c",
+        "html_url": "https://github.com/kodie/md5-file/commit/30b710e5e799741a5b5c3e1a78f8378508f87f9c"
+      },
+      {
+        "sha": "7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+        "html_url": "https://github.com/kodie/md5-file/commit/7b30e8873e179b017c0c1be1087e4838e9d22bd0"
+      }
+    ]
+  },
+  {
+    "sha": "7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+    "node_id": "MDY6Q29tbWl0MTkxMzkxMDA6N2IzMGU4ODczZTE3OWIwMTdjMGMxYmUxMDg3ZTQ4MzhlOWQyMmJkMA==",
+    "commit": {
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "date": "2017-08-14T19:44:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2017-08-14T19:44:31Z"
+      },
+      "message": "Merge pull request #13 from kodie/master\n\nAdd command line support",
+      "tree": {
+        "sha": "c9209fb3161b887fc043b4aedc1a5bf071dbe4a6",
+        "url": "https://api.github.com/repos/kodie/md5-file/git/trees/c9209fb3161b887fc043b4aedc1a5bf071dbe4a6"
+      },
+      "url": "https://api.github.com/repos/kodie/md5-file/git/commits/7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/kodie/md5-file/commits/7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+    "html_url": "https://github.com/kodie/md5-file/commit/7b30e8873e179b017c0c1be1087e4838e9d22bd0",
+    "comments_url": "https://api.github.com/repos/kodie/md5-file/commits/7b30e8873e179b017c0c1be1087e4838e9d22bd0/comments",
+    "author": {
+      "login": "roryrjb",
+      "id": 4608175,
+      "node_id": "MDQ6VXNlcjQ2MDgxNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4608175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/roryrjb",
+      "html_url": "https://github.com/roryrjb",
+      "followers_url": "https://api.github.com/users/roryrjb/followers",
+      "following_url": "https://api.github.com/users/roryrjb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/roryrjb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/roryrjb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/roryrjb/subscriptions",
+      "organizations_url": "https://api.github.com/users/roryrjb/orgs",
+      "repos_url": "https://api.github.com/users/roryrjb/repos",
+      "events_url": "https://api.github.com/users/roryrjb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/roryrjb/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ca5cb2c4d8438d2a45bb342235fec9f7016a2364",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/ca5cb2c4d8438d2a45bb342235fec9f7016a2364",
+        "html_url": "https://github.com/kodie/md5-file/commit/ca5cb2c4d8438d2a45bb342235fec9f7016a2364"
+      },
+      {
+        "sha": "b6aa67dcfb1e9c5ccf72908d6467a822935b5858",
+        "url": "https://api.github.com/repos/kodie/md5-file/commits/b6aa67dcfb1e9c5ccf72908d6467a822935b5858",
+        "html_url": "https://github.com/kodie/md5-file/commit/b6aa67dcfb1e9c5ccf72908d6467a822935b5858"
+      }
+    ]
+  }
+]

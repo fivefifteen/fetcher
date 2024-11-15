@@ -1,0 +1,2091 @@
+{
+  "_id": "md5-file",
+  "_rev": "78-b679b205a71d7fdb0a429d51e3c6390c",
+  "name": "md5-file",
+  "time": {
+    "modified": "2022-06-19T17:15:17.605Z",
+    "created": "2014-02-07T06:33:42.122Z",
+    "0.0.1": "2014-02-07T06:33:42.122Z",
+    "0.0.2": "2014-02-08T18:38:15.183Z",
+    "1.0.0": "2014-03-22T22:38:29.336Z",
+    "1.0.1": "2014-04-25T08:32:25.179Z",
+    "1.1.0": "2014-06-07T08:01:48.768Z",
+    "1.1.1": "2014-06-07T08:03:52.029Z",
+    "1.1.2": "2014-09-03T09:43:18.489Z",
+    "1.1.3": "2014-10-31T18:11:36.766Z",
+    "1.1.4": "2014-10-31T18:12:48.928Z",
+    "1.1.5": "2014-11-26T19:20:21.773Z",
+    "1.1.7": "2014-12-06T12:22:56.094Z",
+    "1.1.8": "2014-12-06T12:24:23.239Z",
+    "1.1.9": "2014-12-06T12:29:21.908Z",
+    "1.1.10": "2014-12-06T12:34:09.900Z",
+    "2.0.0": "2015-05-13T13:35:08.245Z",
+    "2.0.1": "2015-06-20T08:16:20.315Z",
+    "2.0.2": "2015-06-20T08:17:49.224Z",
+    "2.0.3": "2015-06-20T08:24:51.141Z",
+    "2.0.4": "2015-11-27T11:14:43.694Z",
+    "2.0.5": "2016-05-21T15:09:26.021Z",
+    "2.0.6": "2016-05-21T17:28:32.485Z",
+    "3.0.0": "2016-05-22T14:57:51.633Z",
+    "2.0.7": "2016-05-22T15:13:37.541Z",
+    "3.0.1": "2016-05-22T15:14:13.953Z",
+    "3.1.0": "2016-05-22T15:51:28.214Z",
+    "3.1.1": "2016-06-20T11:31:42.113Z",
+    "3.2.0": "2017-08-14T19:48:53.866Z",
+    "3.2.1": "2017-08-15T07:20:25.580Z",
+    "3.2.2": "2017-08-15T08:11:18.212Z",
+    "3.2.3": "2017-09-22T14:54:31.315Z",
+    "4.0.0": "2018-04-04T14:29:56.472Z",
+    "5.0.0": "2020-04-05T11:42:11.707Z"
+  },
+  "maintainers": [
+    {
+      "email": "linus@folkdatorn.se",
+      "name": "linusu"
+    },
+    {
+      "email": "rory@dysfunctionalprogramming.com",
+      "name": "roryrjb"
+    }
+  ],
+  "dist-tags": {
+    "latest": "5.0.0"
+  },
+  "description": "Get the MD5-sum of a given file, with low memory usage, even on huge files.",
+  "readme": "# MD5 file\n\nGet the MD5-sum of a given file, with low memory usage, even on huge files.\n\n## Installation\n\n```sh\nnpm install --save md5-file\n```\n\n## Usage\n\n### As a module\n\n```js\nconst md5File = require('md5-file')\n\n/* Async usage */\nmd5File('LICENSE.md').then((hash) =\u003E {\n  console.log(`The MD5 sum of LICENSE.md is: ${hash}`)\n})\n\n/* Sync usage */\nconst hash = md5File.sync('LICENSE.md')\nconsole.log(`The MD5 sum of LICENSE.md is: ${hash}`)\n```\n\n### As a command line tool\n\n```sh\n$ md5-file LICENSE.md\nad1faf9381e43c471dc381c17a4ee4b6\n```\n\n## API\n\n### `md5File(path: string) =\u003E Promise\u003Cstring\u003E`\n\nAsynchronously get the MD5-sum of the file at `path`.\n\nReturns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that will be resolved with a string containing the MD5-sum.\n\n### `md5File.sync(path: string) =\u003E string`\n\nSynchronously get the MD5-sum of the file at `path`.\n\n### License\n\nMIT\n",
+  "versions": {
+    "1.0.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "version": "1.0.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "_id": "md5-file@1.0.1",
+      "dist": {
+        "shasum": "06d1e270c47ddfb59d262ba49d4bb65cde24c96a",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.0.1.tgz",
+        "integrity": "sha512-FNG6/pCAmWXX9DxX0b9fHMRYjPhUgG8puA9nxvs4IGNLLUCpkCDp0R8jHfPWtgikl+usEHwAkSEvUs9vWI74NQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCb6NHxj0CNxGhkdSAnZ3ja5ICOrRB6CYK/qPrb3mqEBQIgUROolQiVMwPouMTrLUeN50tY2KaWT5dwEhHSDNL+9vI="
+          }
+        ]
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.25",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "1.1.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "_id": "md5-file@1.1.0",
+      "_shasum": "57d36752ea741d6922bc05f94ff7c15107953514",
+      "_from": ".",
+      "_npmVersion": "1.4.9",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "57d36752ea741d6922bc05f94ff7c15107953514",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.0.tgz",
+        "integrity": "sha512-QmzNGJn/v3d/aOqACDBj5duIOORW7BuwPHG2BJMHyUJYRBdbcjHImZVPeW5U+7uCd5OvZRxt15skm2namySPEQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC/dHnU554ZkLLAZDgl1kBG3ZELEMKsQxbY9qTJPOzJlwIgDfIc+++vjy2No97vbFZ93yQDIlam8X9UanMS17oXFQg="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "_id": "md5-file@1.1.1",
+      "_shasum": "20a872101339c3b854c737c5fd2aabaebf6737a0",
+      "_from": ".",
+      "_npmVersion": "1.4.9",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "20a872101339c3b854c737c5fd2aabaebf6737a0",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.1.tgz",
+        "integrity": "sha512-mEArGHBo9Q/dHV9fgXYjRWYOkAYcJatp0lHRiV4/hSgeOwuxQaASOVZOFNaq/EQvg+5PgDgLAWCw6l/EhKI25Q==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQDa8tjcPQtIcuxfo2G5CFRiTF2ccuT0DQEubTwKm6jgKQIhAN7JnNzMzgKfM1HPpcAFPbeiDHr12W+wIGkuAxDqgPku"
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.2": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.2",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "09952b925fe8c10292c631b768991493b46621df",
+      "_id": "md5-file@1.1.2",
+      "_shasum": "92bf88270edeb013f8520db5c34e3c5053d8bdfa",
+      "_from": ".",
+      "_npmVersion": "2.0.0-beta.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "92bf88270edeb013f8520db5c34e3c5053d8bdfa",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.2.tgz",
+        "integrity": "sha512-5KV7cqNJzT3J/GDtThbH7TMPFuTgkzy1pdNJrQCmRyAzQhq1Z3jDnslG0dlzfW6GfMC+PVSjLoPvBvZDBAPwCA==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC+cfU/+PxDlDu8Cgb9+FWTALj4LyoVlnztOrKjKGt6DAIgI5fIHwLOGYPa46Nz+DQGF5TK/EoI6QK6liQb3+jWtfI="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.3": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.3",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "36fce1998e9b5a50fc9993cd7b1020fdfb546201",
+      "_id": "md5-file@1.1.3",
+      "_shasum": "30d747850b5d71d4b3fbfb36e81808430871db03",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "30d747850b5d71d4b3fbfb36e81808430871db03",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.3.tgz",
+        "integrity": "sha512-9ZtyGlXck5ZLnvTF2JgmSyx0LJ9InKPaQXFezxe3DqoLHPt62z2EhFCBEIdQgtji7luHvDox86gRQ+QfdFMVyw==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIFZDl1/7QqqCFge1awRlsYGCtui5Mwz7silxen8p8OuXAiAT6T1fi0SS9HIcqZREdeojmHMxANqus+GuWAQfA67Vqw=="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.4": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.4",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "32d30f37915f295520f35a6c0460cb09dc4f2d86",
+      "_id": "md5-file@1.1.4",
+      "_shasum": "bc05b565a3e9366fd022d473b806d2e4abd85731",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "bc05b565a3e9366fd022d473b806d2e4abd85731",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.4.tgz",
+        "integrity": "sha512-jXKPwZecQoOYC0dNFNzgEDQiYzh9OEAucYe/dyO3+XSiD812qs5LBV9A5Nb0gvqisrh9G5luwz2PINWXTacsjg==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIHz9xi8AzL1SJZm8P5pGwF5wgCh2G5c9xoXvgqEPmf/FAiBos7r09YKdrnNaZvTPMH9Mwa4UhbfZnpxvAfhkvQUnRQ=="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.5": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.5",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "049917daba955e24646d45ca7dc71db3285030c2",
+      "_id": "md5-file@1.1.5",
+      "_shasum": "476d9335b70c8ab29c09e8bdef3c85d85ebec350",
+      "_from": ".",
+      "_npmVersion": "2.1.9",
+      "_nodeVersion": "0.10.25",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "476d9335b70c8ab29c09e8bdef3c85d85ebec350",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.5.tgz",
+        "integrity": "sha512-MLReeS39mDVlp3UnQ0NlhrCVlVli0B5UgP5fQLHlfPZO4G22kwRPFWEMf14aW/Rs2MfO1GgThJP1ECOD1WYFUA==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDEZgmJS0iFtpXdJc4AHfNNgDzop7iIK2iIPIrfSoeI7QIgPnbHQ77wwt39yXnjcTCRnA2pzZWy30wax9poXPUYlMk="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.7": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.7",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "74df32336b1d1245a411ad2dd8ba6e1219a4d81d",
+      "_id": "md5-file@1.1.7",
+      "_shasum": "fa48f0ae1a72d507f54c557c8c09230c9a0bb5e4",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "fa48f0ae1a72d507f54c557c8c09230c9a0bb5e4",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.7.tgz",
+        "integrity": "sha512-11fWLfLnDmC6qR1Uuunm/t32kZV6uLbUjNMPICAAmCeo/9dqrGLvD+JnR9FSc/F6qA/VZ1RYzmKRxUEZjVkO7Q==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIA+m5m8qONd0GY2/VZXZKk1hIRQ8vNKbxFQa/JzUNlXsAiEA82Il+QxY1u0m2yGIPwkWjsi1D3pnIJO4j9PIeTsoxFw="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.8": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.8",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "a914ff8d8da533a6f85f3813911294522d3b31a4",
+      "_id": "md5-file@1.1.8",
+      "_shasum": "9ef11dc46c63663e4f1281053456661b91b548cb",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "9ef11dc46c63663e4f1281053456661b91b548cb",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.8.tgz",
+        "integrity": "sha512-KZ9LkDgoaH9o7n2UeHCmlEeucWzX+a7ANf1qNLhWC3HlYZpLlmYOnc40KFHNY+LI0hLuAYPtlNu35g1EtWORlw==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCF3jBvDjdgNIUDhb/ScE+op05L1akDy7Jd713KzmUQlwIgSqgkVH5Xyq733kKnDBZNNiGDVGmi8omblZdIlJktZMw="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.9": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.9",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "465b4777c635a0ad66e59df6c3a2a57b3a9fc7d4",
+      "_id": "md5-file@1.1.9",
+      "_shasum": "c504ffb95882fb95d27d2941ef6e5a888d5d1d69",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "c504ffb95882fb95d27d2941ef6e5a888d5d1d69",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.9.tgz",
+        "integrity": "sha512-lw0J6ag9IJG/R7Oej1DzT/MAFgq9cVfNvvGZanVK1OEr64RzozWslyZu18qKo1V2MTrx1TgeF4WQzVLNlh/YBg==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCMeuDXp3NUZlcSe/msvk59G+kYa/ssQtb67KlmOvQAFwIhANBqkqPjjzhx0O8mmchde559qHSU6jXOEhBYFMTQj4ZB"
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "1.1.10": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "1.1.10",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "node test"
+      },
+      "gitHead": "d00f008b84b40f8212695579f34a2257b919d136",
+      "_id": "md5-file@1.1.10",
+      "_shasum": "d8f4fce76c92cb20b7d143a59f58ca49b4cf3174",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "d8f4fce76c92cb20b7d143a59f58ca49b4cf3174",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.10.tgz",
+        "integrity": "sha512-1y2ul4lAUFGnoxzkCTOGdtYtxMPkpmZyAiVBWv4NjRXdaG2lj9DC6c6g9nM8rwTAPc9DHyXsgb3Xg1/kFW6TjQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDn9zUuxgMUlCbW2cAaHTKMwo7nwUqK78UCHB9LjFzsjgIgOuHbZ2vL+5ZinQdbtKVE/kM3yrelivIaC/WhtQkcVss="
+          }
+        ]
+      },
+      "directories": {
+
+      }
+    },
+    "2.0.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js"
+      ],
+      "version": "2.0.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "standard && node test"
+      },
+      "devDependencies": {
+        "standard": "^3.8.0"
+      },
+      "gitHead": "49ab0f3846d386a22e12bb64b76e29f92512c850",
+      "_id": "md5-file@2.0.0",
+      "_shasum": "5ef9b55091da11e10457c43a610695e199a1a974",
+      "_from": ".",
+      "_npmVersion": "2.9.0",
+      "_nodeVersion": "2.0.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "dist": {
+        "shasum": "5ef9b55091da11e10457c43a610695e199a1a974",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.0.tgz",
+        "integrity": "sha512-J4IWv5nFyx5XHCbDrVveGpu1AFRGOupMgIsioKDXr4nw66pfdB97Cax16DqJW+pbW/sIC50vxV0/VIj0+cMP4Q==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCFc2R2seHispRyRhOPmpWzpTaG/jELQTug3vmzTAHVrQIgZ3DvQ6X9N24XdS7XJ5oxV4+H2RPFidgPdaZ+JlLnYfc="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "2.0.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "standard && node test"
+      },
+      "devDependencies": {
+        "standard": "^3.8.0"
+      },
+      "gitHead": "ebf087f4c9e144b6d991abfc02ee790726d80816",
+      "_id": "md5-file@2.0.1",
+      "_shasum": "43f0b11325bae10c35447ff39e9d7cbac495c2dd",
+      "_from": ".",
+      "_npmVersion": "2.9.0",
+      "_nodeVersion": "2.0.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "dist": {
+        "shasum": "43f0b11325bae10c35447ff39e9d7cbac495c2dd",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.1.tgz",
+        "integrity": "sha512-p8eUuzcauIZtt0RgRQ1gndwKwhcVez3kZHZXyArFyOQOo0m1IPiSF8fIFwRU83mY/CfuXL8jw/iOKcWLuONGTw==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIGXTsmlzoA31eDuhMRAEKom7xOdNg82BsqNUXMF97jOrAiBjLHgXtxuWZsqpOz5+EkNyoE0Fzc5wtP9Fuu4nR1C1tw=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "2.0.2": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.2",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "standard && node test"
+      },
+      "devDependencies": {
+        "standard": "^3.8.0"
+      },
+      "gitHead": "fe9ef911373c06e85622d516caf7f566274cb502",
+      "_id": "md5-file@2.0.2",
+      "_shasum": "bf6be8b7aead25c6af1000d7d5aaa9a2025e9fbe",
+      "_from": ".",
+      "_npmVersion": "2.9.0",
+      "_nodeVersion": "2.0.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "dist": {
+        "shasum": "bf6be8b7aead25c6af1000d7d5aaa9a2025e9fbe",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.2.tgz",
+        "integrity": "sha512-iUMCFJR05QzZLPIxPnEZQxpXolByxf6rlXl8NsmpOmorjfbyjthI4WWCILZPIP4tRGN7zEsIlmToYEuvCjIUXQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCiglk/qyMIflsza/liwJdDFceDzHf/UQkJNCkddFhoxwIhAIkrtbiuti6cEtt+LZOynr2GgVtZ5n8+jNjSGk7w/EWr"
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "2.0.3": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.3",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "standard && node test"
+      },
+      "devDependencies": {
+        "standard": "^3.8.0"
+      },
+      "gitHead": "08b56b0aec338b6c382ef4a9af01278ddd499f7b",
+      "_id": "md5-file@2.0.3",
+      "_shasum": "4a050b52e40b5477d09943bf9fd7f1ff8a289cd1",
+      "_from": ".",
+      "_npmVersion": "2.9.0",
+      "_nodeVersion": "2.0.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "dist": {
+        "shasum": "4a050b52e40b5477d09943bf9fd7f1ff8a289cd1",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.3.tgz",
+        "integrity": "sha512-L7ndz7KKIc2zLd6dhh5Z6ZFwHxuS9sNiykQDeIzuqulW1X0xgx5G3WYGUucH9yj44poEvsLuWacPcUnmNJEGJQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCrb0iRakysQhhnID8nCw9q/WB6twJoKvDfJO9m3OJVYgIhAKeJuGnNz5W1iFcD7f2XjT6035zR0sJGgumPStDyR9UP"
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "2.0.4": {
+      "name": "md5-file",
+      "main": "index.js",
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.4",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "homepage": "https://github.com/roryrjb/md5-file",
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "http://github.com/roryrjb/md5-file/issues",
+        "email": "roryrjb@gmail.com"
+      },
+      "scripts": {
+        "test": "standard && node test"
+      },
+      "devDependencies": {
+        "standard": "^3.8.0"
+      },
+      "gitHead": "51af711f2d8bc0a044aea0877e0443d99ffc847f",
+      "_id": "md5-file@2.0.4",
+      "_shasum": "2495ec3d32d57238f4918ca700ef19611c2e2997",
+      "_from": ".",
+      "_npmVersion": "3.3.6",
+      "_nodeVersion": "5.0.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "roryrjb@gmail.com"
+      },
+      "dist": {
+        "shasum": "2495ec3d32d57238f4918ca700ef19611c2e2997",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.4.tgz",
+        "integrity": "sha512-MA4oEuYDnO5EZOHF3dYPH4CWMDvMl+goTvrD3D8f4/pTM3dhnY+3a7T/DxOtOxQSN7ofWHdSx08DUnl0yM+ZCg==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIE5sSepR5q+Ki+Oe17v8zbqT77xcd7/odVIgG8CXbUj6AiBI2iSDyZsFYP+tp+7lOUfQeSG5wklYb1JoxeKxZi+rnw=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "directories": {
+
+      }
+    },
+    "2.0.5": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.5",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "908731eed34b0d77241fcfa874a371643077a9dc",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@2.0.5",
+      "_shasum": "94336846d9ecd1765bf6f4b6e53c1e83d103a04a",
+      "_from": ".",
+      "_npmVersion": "3.8.3",
+      "_nodeVersion": "5.10.1",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "94336846d9ecd1765bf6f4b6e53c1e83d103a04a",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.5.tgz",
+        "integrity": "sha512-Aewf7UMGUQI9vkpePeMnwxQh3h+hmco+irPwXjq7G7mkEpxITiBeHGiBI4WjDsjVqwg5I8+C9sX7Koe5MAG1PA==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCICSuC67vTZQpl0M5iz1cKO7CW9YYS2Ki2Q05pQi2H+7+AiBuHvo14JokTAqMWXwAwAV76UFiQxOBEU4wVZF8KBkejQ=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-2.0.5.tgz_1463843363608_0.5990141003858298"
+      },
+      "directories": {
+
+      }
+    },
+    "2.0.6": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.6",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "f40e3ce566dc17cd3189223b3efe73748b3dad67",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@2.0.6",
+      "_shasum": "9289a25daf4dc77bc73224ed60b4d89f9de164d7",
+      "_from": ".",
+      "_npmVersion": "3.8.3",
+      "_nodeVersion": "5.10.1",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "9289a25daf4dc77bc73224ed60b4d89f9de164d7",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.6.tgz",
+        "integrity": "sha512-Wb8LEQxUpWLSzWoUm8qPA8FJplHNRtxcM4wpSl10awMF8u4zir2jb1tL5Cbqn7lkPoNLtvc0r1sNvxxsyRuWjg==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQCz2j6tTXe+30IaQb+2pUYBb0oaMXfSBaAg88OuoIasKQIhAMSh3QHmQ4aoZA6BI9O8RBfzSdJcuzR20VGnzRMiB1Ec"
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-2.0.6.tgz_1463851709967_0.022473804652690887"
+      },
+      "directories": {
+
+      }
+    },
+    "3.0.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "3.0.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "9264c3c96dcb2b583a576ac521a641f035200425",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.0.0",
+      "_shasum": "9584fc8960fb2259339a2738988afafc5dff3392",
+      "_from": ".",
+      "_npmVersion": "3.8.9",
+      "_nodeVersion": "6.2.0",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "9584fc8960fb2259339a2738988afafc5dff3392",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.0.0.tgz",
+        "integrity": "sha512-FtLfP62YsFZN1eLKbJtkUAK5hw1A2i2Q2Ud0Lnm6XEqASAOlQQ5pAJjCAGJyiBC74eWAu9FKqyJDfOUCstWT4Q==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCGhAP4CKaSQmZSGDqqSr6bSV5V+4JhfGIQs5/XmYpu9QIgD6VoUrKPPaS+zdpbgtVfdDUnLq9kuOSqR7OWZ/swdT8="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-3.0.0.tgz_1463929069445_0.22238056221976876"
+      },
+      "directories": {
+
+      }
+    },
+    "2.0.7": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "2.0.7",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "2fc70d52e2bece5c984ac431beabd9da3b81396c",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@2.0.7",
+      "_shasum": "307f78bd04ccb054e467ec661cfa5a9afdc9f210",
+      "_from": ".",
+      "_npmVersion": "3.8.9",
+      "_nodeVersion": "6.2.0",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "307f78bd04ccb054e467ec661cfa5a9afdc9f210",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-2.0.7.tgz",
+        "integrity": "sha512-kWAICpJv8fIY0Ka/90iOX9nCJ407Fgj82ceWwcxi2HvVkKGHRMS/Y4caqBaju5skNYXiQohGUjwGZ7rVgzUhRw==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIDZ5vn8gAzhaHz64Z7QkAd+uRw2ylH+gUBOCpKO3/v6IAiEAlAFgJX7XunAzLs6ES+EpGz582Y69uI+qrBjroE/h/i8="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-2.0.7.tgz_1463930014503_0.15299264527857304"
+      },
+      "directories": {
+
+      }
+    },
+    "3.0.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "3.0.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "34a0b28687a8db49c6cbdfe89b5b00ae9baa2199",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.0.1",
+      "_shasum": "788cf32eb03b4cf2f89b0abe9d914b5e1a58b9ca",
+      "_from": ".",
+      "_npmVersion": "3.8.9",
+      "_nodeVersion": "6.2.0",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "788cf32eb03b4cf2f89b0abe9d914b5e1a58b9ca",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.0.1.tgz",
+        "integrity": "sha512-SWtUJINLzleBlpHQjCZZleueg+o0ZfFg63bSNTncU8ciPcOWb2Fq/0TsDXp3DLzCfn32OM+QmQ2NhfMWq+o+xQ==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIFbyXUWePYw5lvhiZmrBuhartYN0/22wNqQVR1OoD7N1AiB9cvwTqJQIUYFEBHFLoBQ3sumYhYMNUN8Q5ZhOWE+c/Q=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-3.0.1.tgz_1463930050958_0.692595168016851"
+      },
+      "directories": {
+
+      }
+    },
+    "3.1.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "test.js",
+        "LICENSE.md",
+        "README.md"
+      ],
+      "version": "3.1.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "22dfa1df6e89e3be4e17d70834db31235b5454b7",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.1.0",
+      "_shasum": "a1b082fca3ad4231d368800622425fb35c74dd53",
+      "_from": ".",
+      "_npmVersion": "3.8.9",
+      "_nodeVersion": "6.2.0",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "a1b082fca3ad4231d368800622425fb35c74dd53",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.1.0.tgz",
+        "integrity": "sha512-FATE9+/3Zo0tNVglgiH2b5qJ9SvhcsNAyRc5nkpU8CkYPPVEWbH1CRO1zIHEQXrtZrTBDEGWSaAb05aFmuDC4Q==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIHNLaUaNqo7O99Pfo+5yPeEFW0H77WZ6hfZwpXmdjF65AiEA0QtBaAPLiryJQY3QWM1wloWQpEX0K0JyhE4TNXVbpLY="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-3.1.0.tgz_1463932285844_0.7138498357962817"
+      },
+      "directories": {
+
+      }
+    },
+    "3.1.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "promise.js"
+      ],
+      "version": "3.1.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "roryrjb@gmail.com",
+        "url": "www.roryrjb.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "ca5cb2c4d8438d2a45bb342235fec9f7016a2364",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.1.1",
+      "_shasum": "db3c92c09bbda5c2de883fa5490dd711fddbbab9",
+      "_from": ".",
+      "_npmVersion": "3.9.3",
+      "_nodeVersion": "6.2.1",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "shasum": "db3c92c09bbda5c2de883fa5490dd711fddbbab9",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.1.1.tgz",
+        "integrity": "sha512-9yLrrfgoyOe+0HqLiTF1XeJeOAf/y4Eh4h019avM2OrUGTcXWZkk6YCjzJmeutC6PyBQXlRAhtmdbL8GDPeIAA==",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEYCIQDm4Ayk0mJS9PzdLDhB0FUEW1G0Rbzwy+bbBM1KsOiXfAIhAOrKBHes5YZz0jI7JVyX7Bc2gOM8bNrClQYJvky/FDvC"
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "linusu",
+          "email": "linus@folkdatorn.se"
+        },
+        {
+          "name": "roryrjb",
+          "email": "roryrjb@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/md5-file-3.1.1.tgz_1466422299935_0.8422192584257573"
+      },
+      "directories": {
+
+      }
+    },
+    "3.2.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "promise.js"
+      ],
+      "version": "3.2.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "bin": {
+        "md5-file": "index.js"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "gitHead": "e420c29e666414807de59cb07be3780b688ec0df",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.2.0",
+      "_npmVersion": "5.3.0",
+      "_nodeVersion": "8.3.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "dist": {
+        "integrity": "sha512-hgK1GV2rxTqEWa3xK/iBcQaUnxGWBiLgqTZxSJcWusRk3G0T9Rm/G6MDa8ekjL+Wb0XKM4so/uPu1rVpfSnVjA==",
+        "shasum": "778ab53c08605872d41389afc372c2fbe9b90c98",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.2.0.tgz",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIB+j3JnI3gCOHWtNq7QLpZycxcJS/Iaq6cnlCdZccfOGAiBaybwYwiQepQ+R+I6yS0LK9lHI8a03tYruSnBnc4HOHw=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file-3.2.0.tgz_1502740132953_0.9903215349186212"
+      },
+      "directories": {
+
+      }
+    },
+    "3.2.1": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "promise.js"
+      ],
+      "version": "3.2.1",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "bin": {
+        "md5-file": "index.js"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "engines": {
+        "node": "\u003E=4.5.0"
+      },
+      "gitHead": "e8201ed1bbf81827117cdedb18aa9610b257d0c0",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.2.1",
+      "_npmVersion": "5.3.0",
+      "_nodeVersion": "8.3.0",
+      "_npmUser": {
+        "name": "roryrjb",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "dist": {
+        "integrity": "sha512-ZsQet7wCePf0SpHJv/uU/AjusAxFzSsxDhsybTNtVEAElDvg9GWYP3w6G+/6Fd/xkJLLUrDzHqBk+p1YcDJITQ==",
+        "shasum": "0e9ef8f61d4e1b0945ac01018648b6d7134f8ed4",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.2.1.tgz",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQDyYivwbHI4yoD6CPfnpKmDWno/YxGq5EkO2Z8iVrJU2gIgKyk8b4aYFn+LtCCnD7Vz4LetocL2oGu6tCgjijCy5tQ="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file-3.2.1.tgz_1502781624717_0.039550533751025796"
+      },
+      "directories": {
+
+      }
+    },
+    "3.2.2": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "index.js",
+        "promise.js"
+      ],
+      "version": "3.2.2",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "bin": {
+        "md5-file": "index.js"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "engines": {
+        "node": "\u003E=0.10"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.1.0"
+      },
+      "gitHead": "27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.2.2",
+      "_npmVersion": "5.3.0",
+      "_nodeVersion": "8.2.1",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "integrity": "sha512-E8eX+EZ7o4duXYl9fkbM9q6KUDvmwwvLA66G8psDHtw6ZW2MXyKH7xNd7yRd4wbVXaMpSrffCTXPnzlO/tXkMg==",
+        "shasum": "2300b91071b8295a087dfa6040345e015f5c8429",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.2.2.tgz",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIBf2VZ6+9CThvMjgqaWfNjdoxGNsrCI32A1JWf+KNn3RAiEAzx99WXWtv9A46h2ZYmdAQYBo0dw52Zl9YlK7+GRyhvk="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file-3.2.2.tgz_1502784677277_0.9277216533664614"
+      },
+      "directories": {
+
+      }
+    },
+    "3.2.3": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "cli.js",
+        "index.js",
+        "promise.js"
+      ],
+      "version": "3.2.3",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "bin": {
+        "md5-file": "cli.js"
+      },
+      "devDependencies": {
+        "mocha": "^2.4.5",
+        "standard": "^7.1.0"
+      },
+      "engines": {
+        "node": "\u003E=0.10"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.1.0"
+      },
+      "gitHead": "e3956df5f9e1f21317e781c399cffde354fb9cce",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@3.2.3",
+      "_npmVersion": "5.3.0",
+      "_nodeVersion": "8.4.0",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "integrity": "sha512-3Tkp1piAHaworfcCgH0jKbTvj1jWWFgbvh2cXaNCgHwyTCBxxvD1Y04rmfpvdPm1P4oXMOpm6+2H7sr7v9v8Fw==",
+        "shasum": "f9bceb941eca2214a4c0727f5e700314e770f06f",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-3.2.3.tgz",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCj0+b/FjeHs+5CbdfZK2weTCXJurH5kyZInJq1mNt9NAIgCCKOWc0HZu0u30u/l+NWs5/ktTiUrtZpqBM7xPfj0EM="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file-3.2.3.tgz_1506092070378_0.7027955728117377"
+      },
+      "directories": {
+
+      }
+    },
+    "4.0.0": {
+      "name": "md5-file",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "files": [
+        "cli.js",
+        "index.js",
+        "promise.js"
+      ],
+      "version": "4.0.0",
+      "description": "return an md5sum of a given file",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "author": {
+        "name": "Rory Bradford",
+        "email": "rory@dysfunctionalprogramming.com"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "bin": {
+        "md5-file": "cli.js"
+      },
+      "devDependencies": {
+        "mocha": "^5.0.5",
+        "standard": "^11.0.1"
+      },
+      "engines": {
+        "node": "\u003E=6.0"
+      },
+      "gitHead": "7c09759e515845b207469a32db83ac04c9f156a1",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@4.0.0",
+      "_npmVersion": "5.6.0",
+      "_nodeVersion": "9.10.1",
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "dist": {
+        "integrity": "sha512-UC0qFwyAjn4YdPpKaDNw6gNxRf7Mcx7jC1UGCY4boCzgvU2Aoc1mOGzTtrjjLKhM5ivsnhoKpQVxKPp+1j1qwg==",
+        "shasum": "f3f7ba1e2dd1144d5bf1de698d0e5f44a4409584",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-4.0.0.tgz",
+        "fileCount": 6,
+        "unpackedSize": 4493,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIDKDoZfh1+SgryFFrECCtLCqXPd7iP+V3KG6zHPyJEcQAiEA1vw8oCEnbQjOY7/GcR2wIVWDiV9Lp1sXxNaMN0DjSbY="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "directories": {
+
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file_4.0.0_1522852196424_0.688636729430244"
+      },
+      "_hasShrinkwrap": false
+    },
+    "5.0.0": {
+      "name": "md5-file",
+      "version": "5.0.0",
+      "keywords": [
+        "md5",
+        "md5sum",
+        "checksum"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roryrjb/md5-file.git"
+      },
+      "license": "MIT",
+      "bin": {
+        "md5-file": "cli.js"
+      },
+      "scripts": {
+        "test": "standard && mocha"
+      },
+      "devDependencies": {
+        "mocha": "^7.1.1",
+        "standard": "^14.3.3"
+      },
+      "engines": {
+        "node": "\u003E=10.13.0"
+      },
+      "gitHead": "97d2243464f6557ba7cf9cd6790cd58c3470f583",
+      "description": "Get the MD5-sum of a given file, with low memory usage, even on huge files.",
+      "bugs": {
+        "url": "https://github.com/roryrjb/md5-file/issues"
+      },
+      "homepage": "https://github.com/roryrjb/md5-file#readme",
+      "_id": "md5-file@5.0.0",
+      "_nodeVersion": "12.12.0",
+      "_npmVersion": "6.13.6",
+      "dist": {
+        "integrity": "sha512-xbEFXCYVWrSx/gEKS1VPlg84h/4L20znVIulKw6kMfmBUAZNAnF00eczz9ICMl+/hjQGo5KSXRxbL/47X3rmMw==",
+        "shasum": "e519f631feca9c39e7f9ea1780b63c4745012e20",
+        "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-5.0.0.tgz",
+        "fileCount": 6,
+        "unpackedSize": 3925,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeicQUCRA9TVsSAnZWagAAstMQAJ+8wPShwL69U3/TIIq5\nyGx6cBpDGNDDvI9Byd2DwtcLER4Ag/US3LOnczvyjk7TnhPyO9w/KaAicbGI\nwTWlEA6T07t7Q+Ik6FnF+z8vrX6Tsc/SNY57eLzgs5wpnb96dC2ugAsp5Q2w\nTSNzJEqL60O8x6gItLvSnTOoUUJW/O+ColhFrQhLexxum3nWhFQP1xRlNYH/\nc753qTYPGg+X5YBVgiPK45DsKGAjq8Pi/JqN09JHJSL1rcObKAkSOBNYZ1Zj\nUqsQLEQL+tCL2oMyvK3zTJrp0euc1SeYuCoXrBEVC/Yh/pHCJYXynwrgUkll\nolLnpKDbIvXJUQDXeynccMf21iA3KNprAnwLxYqPbtBtgSIRCrgPVOBz6SQI\nLD76+PDoGjmzNDW+hljy5cD/E97OJ1CQQaltBMF6w7xHhn15TD8fNGuwmiSm\nHetiiAQ3ygLOyY2U8XuolzE7arHISfAty3YBgWArekv4A2pv8skPSWZEIJS+\n1Y9DWWrROKWLO3mfrliqDAwzIyIkBimJviN5n+xypL6hRxHpGc0R8SOseknl\nVJgAuB3qfjBX0A73/Ppi95grNdbmFNmUMEyW+3CYzdgydhw4wAVpOPq4haLf\n0uxG7f3pxVf8RR6H/7mlcM/fAs2CO/2IaeB5tcVTMXR02+TlicphKRUMCVA0\n/3xF\r\n=cIFl\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIF4mGPcEfz445hyRHXyQ8YhaAM+7Ht+0x2kAmvwnUBu7AiEA/2Av1wpEiopaaAFsk6ASRZS5vNsWZ0AJ3zr1woCXhQg="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "linus@folkdatorn.se",
+          "name": "linusu"
+        },
+        {
+          "email": "rory@dysfunctionalprogramming.com",
+          "name": "roryrjb"
+        }
+      ],
+      "_npmUser": {
+        "name": "linusu",
+        "email": "linus@folkdatorn.se"
+      },
+      "directories": {
+
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/md5-file_5.0.0_1586086931561_0.9664121180167717"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "homepage": "https://github.com/roryrjb/md5-file#readme",
+  "keywords": [
+    "md5",
+    "md5sum",
+    "checksum"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roryrjb/md5-file.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roryrjb/md5-file/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "users": {
+    "hrmoller": true,
+    "mutoo": true,
+    "zaptun": true,
+    "ninozhang": true,
+    "matusbielik": true,
+    "tongjieme": true,
+    "snowdream": true,
+    "rochejul": true,
+    "nano": true,
+    "steve3d3d": true,
+    "sqrtthree": true,
+    "jonathas": true,
+    "bianlongting": true,
+    "warcrydoggie": true,
+    "xinwangwang": true,
+    "vboctor": true,
+    "xtx1130": true
+  }
+}

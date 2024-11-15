@@ -1,0 +1,142 @@
+[
+  {
+    "name": "v5.0.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v5.0.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v5.0.0",
+    "commit": {
+      "sha": "97d2243464f6557ba7cf9cd6790cd58c3470f583",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/97d2243464f6557ba7cf9cd6790cd58c3470f583"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3Y1LjAuMA=="
+  },
+  {
+    "name": "v4.0.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v4.0.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v4.0.0",
+    "commit": {
+      "sha": "7c09759e515845b207469a32db83ac04c9f156a1",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/7c09759e515845b207469a32db83ac04c9f156a1"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3Y0LjAuMA=="
+  },
+  {
+    "name": "v3.2.3",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.2.3",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.2.3",
+    "commit": {
+      "sha": "e3956df5f9e1f21317e781c399cffde354fb9cce",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/e3956df5f9e1f21317e781c399cffde354fb9cce"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjIuMw=="
+  },
+  {
+    "name": "v3.2.2",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.2.2",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.2.2",
+    "commit": {
+      "sha": "27a5f602dfd4dfe61c7718d27bb69d74320bc9db",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/27a5f602dfd4dfe61c7718d27bb69d74320bc9db"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjIuMg=="
+  },
+  {
+    "name": "v3.1.1",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.1.1",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.1.1",
+    "commit": {
+      "sha": "ca5cb2c4d8438d2a45bb342235fec9f7016a2364",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/ca5cb2c4d8438d2a45bb342235fec9f7016a2364"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjEuMQ=="
+  },
+  {
+    "name": "v3.1.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.1.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.1.0",
+    "commit": {
+      "sha": "22dfa1df6e89e3be4e17d70834db31235b5454b7",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/22dfa1df6e89e3be4e17d70834db31235b5454b7"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjEuMA=="
+  },
+  {
+    "name": "v3.0.1",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.0.1",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.0.1",
+    "commit": {
+      "sha": "34a0b28687a8db49c6cbdfe89b5b00ae9baa2199",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/34a0b28687a8db49c6cbdfe89b5b00ae9baa2199"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjAuMQ=="
+  },
+  {
+    "name": "v3.0.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v3.0.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v3.0.0",
+    "commit": {
+      "sha": "9264c3c96dcb2b583a576ac521a641f035200425",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/9264c3c96dcb2b583a576ac521a641f035200425"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YzLjAuMA=="
+  },
+  {
+    "name": "v2.0.7",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v2.0.7",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v2.0.7",
+    "commit": {
+      "sha": "2fc70d52e2bece5c984ac431beabd9da3b81396c",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/2fc70d52e2bece5c984ac431beabd9da3b81396c"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YyLjAuNw=="
+  },
+  {
+    "name": "v2.0.6",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v2.0.6",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v2.0.6",
+    "commit": {
+      "sha": "f40e3ce566dc17cd3189223b3efe73748b3dad67",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/f40e3ce566dc17cd3189223b3efe73748b3dad67"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YyLjAuNg=="
+  },
+  {
+    "name": "v2.0.5",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/v2.0.5",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/v2.0.5",
+    "commit": {
+      "sha": "908731eed34b0d77241fcfa874a371643077a9dc",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/908731eed34b0d77241fcfa874a371643077a9dc"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzL3YyLjAuNQ=="
+  },
+  {
+    "name": "2.0.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/2.0.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/2.0.0",
+    "commit": {
+      "sha": "49ab0f3846d386a22e12bb64b76e29f92512c850",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/49ab0f3846d386a22e12bb64b76e29f92512c850"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzLzIuMC4w"
+  },
+  {
+    "name": "1.0.1",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/1.0.1",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/1.0.1",
+    "commit": {
+      "sha": "775261bd0c038df0b74052d4218aa16d706f90aa",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/775261bd0c038df0b74052d4218aa16d706f90aa"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzLzEuMC4x"
+  },
+  {
+    "name": "1.0.0",
+    "zipball_url": "https://api.github.com/repos/kodie/md5-file/zipball/refs/tags/1.0.0",
+    "tarball_url": "https://api.github.com/repos/kodie/md5-file/tarball/refs/tags/1.0.0",
+    "commit": {
+      "sha": "d947986a11e5f2548c06deddc7ac137a5cd25968",
+      "url": "https://api.github.com/repos/kodie/md5-file/commits/d947986a11e5f2548c06deddc7ac137a5cd25968"
+    },
+    "node_id": "MDM6UmVmMTkxMzkxMDA6cmVmcy90YWdzLzEuMC4w"
+  }
+]

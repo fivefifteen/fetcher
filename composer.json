@@ -1,0 +1,75 @@
+{
+  "name": "fivefifteen/fetcher",
+  "version": "0.0.1",
+  "description": "A package manager written in PHP that supports installing dependencies from GitHub, npm, custom URLs, and local file paths.",
+  "authors": [
+    {
+      "name": "Five Fifteen",
+      "email": "hello@fivefifteen.com",
+      "homepage": "https://fivefifteen.com"
+    },
+    {
+      "name": "Kodie Grantham",
+      "email": "kodie.grantham@gmail.com",
+      "homepage": "https://kodieg.com"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "git",
+    "hub",
+    "npm",
+    "node",
+    "package",
+    "pkg",
+    "manage",
+    "manager",
+    "fetch",
+    "fetched",
+    "download",
+    "dependency",
+    "dependencies",
+    "frontend",
+    "front-end",
+    "front",
+    "end",
+    "javascript",
+    "js",
+    "css",
+    "scss",
+    "sass",
+    "style",
+    "stylesheet",
+    "build",
+    "compile",
+    "tool",
+    "file",
+    "local",
+    "url",
+    "http",
+    "https"
+  ],
+  "homepage": "https://github.com/fivefifteen/fetcher",
+  "license": "MIT",
+  "bin": [
+    "bin/fetcher"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fetcher\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "adhocore/cli": "^1.7",
+    "composer/semver": "^3.4",
+    "splitbrain/php-archive": "^1.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^10.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit tests --display-warnings"
+  }
+}
