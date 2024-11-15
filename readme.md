@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
   ![Fetcher](./assets/fetcher.png)
 
@@ -13,7 +13,7 @@
 
   <a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a>
 
-</center>
+</div>
 
 
 ## Table of Contents
