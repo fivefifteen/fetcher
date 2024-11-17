@@ -4,12 +4,14 @@
 
   # Fetcher
 
-  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths.
+  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths. 🐶
 
   [![packagist package version](https://img.shields.io/packagist/v/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
   [![packagist package downloads](https://img.shields.io/packagist/dt/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
   [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fivefifteen/fetcher?style=flat-square)](https://github.com/fivefifteen/fetcher)
   [![license](https://img.shields.io/github/license/fivefifteen/fetcher.svg?style=flat-square)](https://github.com/fivefifteen/fetcher/blob/main/license.md)
+
+  <a href="https://asciinema.org/a/690098" target="_blank"><img src="https://asciinema.org/a/690098.svg" width="75%" /></a>
 
   <a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a>
 
@@ -220,8 +222,8 @@ While Fetcher can be used out of the box without any configuration, a config fil
   },
   "settings": {
     "fetcher": {
-      "directory": "content/themes/my-theme/fetched",
-      "extensions": ["js", "css", "scss", "md"]
+      "extensions": ["js", "css", "scss", "md"],
+      "working_directory": "content/themes/my-theme"
     }
   }
 }
