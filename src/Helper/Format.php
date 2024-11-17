@@ -122,9 +122,11 @@ class Format {
       }
     } elseif (
       self::is_version_string($package_str) ||
+      self::is_prefixed_version_string($package_str) ||
       self::is_version_range($package_str) ||
       substr($package_str, 0, 1) === '#' ||
       substr($package_str, 0, 4) === 'dev-' ||
+      substr($package_str, 0, 4) === 'tag-' ||
       $package_str === 'latest'
     ) {
       $version = $package_str;

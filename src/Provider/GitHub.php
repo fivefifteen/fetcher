@@ -58,6 +58,7 @@ class GitHub extends Provider {
         $download_url_parts = array('archive', substr($version_name, 1));
         break;
       case 'tag':
+        $version_name = preg_replace('/^tag-/', '', $version_name);
         $download_url_parts = array('archive', 'refs', 'tags', $version_name);
         break;
     }
