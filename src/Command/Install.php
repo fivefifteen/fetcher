@@ -160,6 +160,9 @@ class Install extends Command {
         try {
           $package = new Package($provider, $package_info['name'], $package_info['author']);
           $version = $package->get_version($package_info['version']);
+
+          if (!$version) continue;
+
           $writer_version_str = "(<yellow>{$version->name}</end>)";
           $download_path = null;
 
