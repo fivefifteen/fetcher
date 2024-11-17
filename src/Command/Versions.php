@@ -9,7 +9,7 @@ class Versions extends Command {
   static $defaults = array(
     'limit'     => 20,
     'package'   => null,
-    'providers' => 'guthub,npm',
+    'providers' => 'github,npm',
     'verbosity' => 0
   );
 
