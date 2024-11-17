@@ -301,5 +301,16 @@ class FormatTest extends TestCase {
     $this->assertSame('another-package', $info['alias_name']);
     $this->assertSame('another-name', $info['alias_author']);
   }
+
+  public function testVersionParsing16() {
+    $info = Format::parse_package_string('github:v4.0.0', 'author/package');
+
+    $this->assertSame('github', $info['provider']);
+    $this->assertSame('author', $info['author']);
+    $this->assertSame('package', $info['name']);
+    $this->assertSame('v4.0.0', $info['version']);
+    $this->assertSame(null, $info['alias_name']);
+    $this->assertSame(null, $info['alias_author']);
+  }
 }
 ?>

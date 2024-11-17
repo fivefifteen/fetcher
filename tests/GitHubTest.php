@@ -56,6 +56,13 @@ class GitHubTest extends TestCase {
     $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.2.3.zip', $download_url);
   }
 
+  public function testGetDownloadUrl4() {
+    $provider = new GitHubProvider;
+    $download_url = $provider->get_download_url('tag-v3.2.3', 'md5-file', 'kodie');
+
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $download_url);
+  }
+
   public function testGetGetLatestVersionName1() {
     $provider = new GitHubProvider;
     $version_name = $provider->get_latest_version_name('md5-file', 'kodie');
