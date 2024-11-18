@@ -61,7 +61,7 @@ class Format {
         $file = array();
 
         foreach((array) $fileinfo as $key => $value) {
-          $fixed_key = preg_replace('/^' . chr(0) . '\*' . chr(0) . '/', '', $key);
+          $fixed_key = preg_replace('/^\x00\*\x00/', '', $key);
           $file[$fixed_key] = $value;
         }
       }
