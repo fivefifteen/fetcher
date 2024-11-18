@@ -29,7 +29,7 @@ class Uninstall extends Command {
       ->option('-f --fresh-start', 'Deletes the entire fetched directory and optionally deletes all dependencies from fetch.json')
       ->option('-q --quiet', 'Run but don\'t output anything in the terminal (implies --skip-prompts)')
       ->option('-s --save', 'Saves the installed packages to the config JSON file')
-      ->option('-w, --working-directory', 'Sets the working directory that all paths will be relative to', 'strval', self::$defaults['working_directory'])
+      ->option('-w --working-directory', 'Sets the working directory that all paths will be relative to', 'strval', self::$defaults['working_directory'])
       ->option('-y --skip-prompts', 'Skips the confirmation prompt and continues with deletion')
       ->usage(
         '<bold>  $0 uninstall</end> <comment>include-media</end> ## Uninstall the `include-media` package<eol/>' .

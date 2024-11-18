@@ -35,8 +35,8 @@ class Install extends Command {
       ->option('-p --providers [providers]', 'The repository providers to search and what order to search them in', 'strval', self::$defaults['providers'])
       ->option('-q --quiet', 'Run but don\'t output anything in the terminal')
       ->option('-s --save', 'Saves the installed packages to the config JSON file')
-      ->option('-w, --working-directory', 'Sets the working directory that all paths will be relative to', 'strval', self::$defaults['working_directory'])
-      ->option('-x, --no-extract', 'Extract downloaded package archive files')
+      ->option('-w --working-directory', 'Sets the working directory that all paths will be relative to', 'strval', self::$defaults['working_directory'])
+      ->option('-x --no-extract', 'Extract downloaded package archive files')
       ->usage(
         '<bold>  $0 install</end> <comment>--config content/themes/my-theme/compile.json</end> ## Install packages defined in a custom config file<eol/>' .
         '<bold>  $0 install</end> <comment>--providers npm include-media</end> ## Install the latest version of the `include-media` package from npm<eol/>' .
