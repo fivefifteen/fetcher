@@ -29,6 +29,8 @@
         - [Info](#info)
         - [Versions](#versions)
     - [Global Options](#global-options)
+    - [Package & Version Parsing](#package--version-parsing)
+        - [Package Aliases](#package-aliases)
 - [Configuration](#configuration)
 - [License Information](#license-information)
 
@@ -109,6 +111,14 @@ fetcher install github:eduardoboucas/include-media@latest # same as above
 # Install the `include-media` package from a specific commit on GitHub but don't extract it, just download it save it to a custom config file
 fetcher i -c content/themes/my-theme/compile.json -s -p github -x eduardoboucas/include-media@"#fb3ab8e"
 ```
+
+##### Directory Structure
+
+Inside of the `fetched` directory, packages with an author in the name (such as GitHub packages and scoped npm packages) will be installed in `fetched/author/package`. If a package has no author in it's name (such as non-scoped npm packages), it will be installed in `fetched/package`.
+
+When installing a package via a URL or local file path, the basename of the filename will be used as the package name. For example, if I install `package.zip`, it will be installed to `fetched/package`. The exception to this rule is if the package being installed contains a single file with the same extension as the package name. For example if I install `package.css.zip` and that zip file contains a single css file, you will end up with a single file at `fetched/package.css`.
+
+See the [Package Aliases](#package-aliases) section for info about how to customize package names.
 
 
 #### Uninstall
@@ -206,6 +216,55 @@ These options can be used with all commands:
  - `[-V|--version]` - Displays the current Fetcher version
 
 
+### Package & Version Parsing
+
+Because Fetcher supports multiple package providers and those providers have their own unique ways of naming and structuring packages, Fetcher has it's own unique but familiar syntax for package names and versions.
+
+Fetcher uses the [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for pasing version constraints.
+
+##### Examples
+
+```sh
+# latest version of include-media package from no specific provider (will end up being npm because GitHub requires an author)
+include-media
+include-media@latest # same as above
+
+# latest version of eduardoboucas/include-media package from no specific provider (will end up being GitHub because the include-media package is not scoped on npm [it's name on npm is just include-media rather than @eduardoboucas/include-media])
+eduardoboucas/include-media
+eduardoboucas/include-media@latest # same as above
+
+# any version of the include-media package specifically from npm that is v1.3.2 or above and below v1.4.0
+npm:include-media@~1.3.2
+
+# latest version of the include-media package from npm but give it an alias so it's folder structure is like GitHub's
+[eduardoboucas/include-media]npm:include-media
+
+# whatever is currently in the master branch of the eduardoboucas/include-media repository on GitHub
+github:eduardoboucas/include-media@dev-master
+
+# a specific commit from the eduardoboucas/include-media repository on GitHub
+github:eduardoboucas/include-media@#e620564
+
+# a specific tag from the eduardoboucas/include-media repository on GitHub
+github:eduardoboucas/include-media@feature-test
+github:eduardoboucas/include-media@tag-feature-test # same as above
+
+# a package from a URL that has been given an alias (in this case we know the archive has a single css file in it so that file will be named wordpress.css)
+[wordpress/wordpress.css]https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip
+
+# a package from a local file that has been given an alias
+[some-package]file:/home/user/Downloads/my-package.zip
+```
+
+#### Package Aliases
+
+A package can be given an alias name and alias author. An alias author is only used if the alias name is used. This makes it possible to install multiple versions of the same package as well as name packages that are downloaded via URL and have a hash for a name.
+
+For example, running `fetcher i [scss-helpers/media-queries]npm:include-media` will install the `include-media` package to `fetched/scss-helpers/media-queries`.
+
+Keys in the `dependencies` section are considered aliases if the package name is defined in the version string (see the `scss-helpers/media-queries` example below).
+
+
 ## Configuration
 
 While Fetcher can be used out of the box without any configuration, a config file allows for better customization and easier package management.
@@ -216,8 +275,8 @@ While Fetcher can be used out of the box without any configuration, a config fil
 ```json
 {
   "dependencies": {
-    "eduardoboucas/include-media": "npm:include-media@^2.0",
     "kenwheeler/slick": "github:~1.8.0",
+    "scss-helpers/media-queries": "npm:include-media@^2.0",
     "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
   },
   "settings": {
