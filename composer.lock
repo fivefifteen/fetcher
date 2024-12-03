@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba07c8a248e435c20a35b7c6fa79bd53",
+    "content-hash": "e148d660e70a47d11c93e6c313eb7f90",
     "packages": [
         {
             "name": "adhocore/cli",
-            "version": "v1.8.0",
+            "version": "v1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adhocore/php-cli.git",
-                "reference": "6092763ab212038de64c44545574cedb7ef86269"
+                "reference": "cd0152f74970afffe0396aa86f827f23ca07c1e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adhocore/php-cli/zipball/6092763ab212038de64c44545574cedb7ef86269",
-                "reference": "6092763ab212038de64c44545574cedb7ef86269",
+                "url": "https://api.github.com/repos/adhocore/php-cli/zipball/cd0152f74970afffe0396aa86f827f23ca07c1e4",
+                "reference": "cd0152f74970afffe0396aa86f827f23ca07c1e4",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
             ],
             "support": {
                 "issues": "https://github.com/adhocore/php-cli/issues",
-                "source": "https://github.com/adhocore/php-cli/tree/v1.8.0"
+                "source": "https://github.com/adhocore/php-cli/tree/v1.9.2"
             },
             "funding": [
                 {
@@ -74,7 +74,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-15T08:55:32+00:00"
+            "time": "2024-12-01T01:26:12+00:00"
         },
         {
             "name": "composer/semver",

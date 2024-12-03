@@ -56,7 +56,7 @@ class Info extends Command {
         // Errors here are ignored because there could be multiple Providers to try.
 
         if ($verbosity) {
-          $writer->colors("<red>Quiet Error</end>: {$e->getMessage()}", true);
+          $writer->colors("<error>Quiet Error</end>: {$e->getMessage()}", true);
         }
       }
 
@@ -68,7 +68,7 @@ class Info extends Command {
     }
 
     foreach($info as $key => $value) {
-      $writer->colors("<bold>$key</end>: $value\n");
+      $writer->colors("<info_key>$key</end>: <info_value>$value</end>\n");
     }
   }
 }

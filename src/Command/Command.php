@@ -23,7 +23,7 @@ abstract class Command extends \Ahc\Cli\Input\Command {
     }
 
     if (!$quiet && $config) {
-      $writer->colors("Loaded {$config_path}", true);
+      $writer->colors("<info>Loaded</end> <subject>{$config_path}</end>", true);
     }
 
     return $config;

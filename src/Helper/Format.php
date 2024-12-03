@@ -189,5 +189,18 @@ class Format {
 
     return $package_info_list;
   }
+
+  static function write_action(\Ahc\Cli\Output\Writer $writer, string $action, string $message) {
+    $action_slug = strtolower($action);
+    $action = ucfirst($action_slug);
+    $label = "<action_label_{$action_slug}>{$action}</end>";
+    $prefix = "<action_prefix_{$action_slug}>•</end>";
+    $suffix = '<action_suffix>...</end>';
+
+    $message = str_replace('pkg_name', "action_pkg_name_{$action_slug}", $message);
+    $message = str_replace('pkg_version', "action_pkg_version_{$action_slug}", $message);
+
+    $writer->colors("{$prefix} {$label} {$message}{$suffix}", true);
+  }
 }
 ?>

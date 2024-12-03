@@ -8,18 +8,115 @@ if (file_exists(__DIR__ . '/../../../autoload.php')) {
   require_once(__DIR__ . '/../vendor/autoload.php');
 }
 
-$app = new Ahc\Cli\Application('Fetcher', $version);
+use \Ahc\Cli\Application;
+use \Ahc\Cli\Output\Color;
+use \Ahc\Cli\Output\Writer;
 
-$app->add(new Fetcher\Command\Info, 'n');
-$app->add(new Fetcher\Command\Install, 'i');
-$app->add(new Fetcher\Command\Uninstall, 'u');
-$app->add(new Fetcher\Command\Versions, 'v');
+$app = new Application('Fetcher', $version);
+
+$black = Color::BLACK;
+$white = Color::WHITE;
+$steelblue1 = Color::fg256(81);
+$skyblue2 = Color::fg256(111);
+$yellow3 = \Ahc\Cli\Output\Color::fg256(148);
+$lightskyblue1 = Color::fg256(153);
+$yellow2 = Color::fg256(190);
+$darkolivegreen1 = Color::fg256(191);
+$darkolivegreen12 = Color::fg256(192);
+$darkseagreen1 = Color::fg256(193);
+$honeydew2 = Color::fg256(194);
+$red1 = Color::fg256(196);
+$deeppink2 = Color::fg256(197);
+$deeppink1 = Color::fg256(198);
+$salmon1 = Color::fg256(209);
+$palevioletred1 = Color::fg256(211);
+$orange1 = Color::fg256(214);
+$sandybrown = Color::fg256(215);
+$pink1 = Color::fg256(218);
+$plum1 = Color::fg256(219);
+$gold1 = Color::fg256(220);
+$grey58 = Color::fg256(246);
+$grey74 = Color::fg256(250);
+
+$action_palates = array(
+  'copying'     => array($steelblue1, 0, $lightskyblue1, $skyblue2),
+  'downloading' => array($yellow2, 0, $darkseagreen1, $yellow3),
+  'extracting'  => array($orange1, 0, $sandybrown, $salmon1),
+  'moving'      => array($plum1, 0, $pink1, $palevioletred1),
+  'deleting'    => array($red1, 0, $deeppink2, $deeppink1)
+);
+
+$action_styles = array('prefix', 'label', 'pkg_name', 'pkg_version');
+
+foreach($action_palates as $action => $action_palate) {
+  foreach($action_styles as $action_idx => $action_style) {
+    Color::style("action_{$action_style}_{$action}", array(
+      'fg' => $action_palate[$action_idx]
+    ));
+  }
+}
+
+Color::style('pkg_name', array('fg' => $grey58));
+Color::style('pkg_version', array('fg' => $grey58));
+Color::style('info_key', array('fg' => $darkseagreen1));
+Color::style('info_value', array('fg' => $grey74));
+Color::style('table_head', array('fg' => $darkseagreen1));
+Color::style('table_even', array('fg' => $grey58));
+Color::style('table_odd', array('fg' => $grey74));
+Color::style('from', array('fg' => $grey58));
+Color::style('to', array('fg' => $grey58));
+Color::style('action_suffix', array('fg' => 0));
+Color::style('subject', array('fg' => $grey58));
+Color::style('file', array('fg' => $grey58));
+
+Color::style('choice', array('fg' => $red1));
+Color::style('error', array('fg' => $red1, 'bold' => true));
+Color::style('help_category', array('fg' => $steelblue1, 'bold' => true));
+Color::style('help_description_even', array('fg' => $grey58));
+Color::style('help_description_odd', array('fg' => $grey74));
+Color::style('help_example', array('fg' => $plum1));
+Color::style('help_footer', array('fg' => $orange1));
+Color::style('help_summary', array('fg' => $grey58));
+Color::style('info', array('fg' => 0));
+Color::style('question', array('fg' => 0));
+Color::style('warn', array('fg' => $gold1, 'bold' => true));
+
+Color::style('logo1', array('fg' => $honeydew2));
+Color::style('logo2', array('fg' => $darkseagreen1));
+Color::style('logo3', array('fg' => $darkolivegreen12));
+Color::style('logo4', array('fg' => $darkolivegreen1));
+Color::style('logo5', array('fg' => $yellow2));
+Color::style('url', array('fg' => $yellow2));
+Color::style('five', array('bg' => $black, 'fg' => $white));
+Color::style('fifteen', array('bg' => $white, 'fg' => $black));
+Color::style('fifteenwebsite', array('fg' => $grey74));
+
+$logo =  '<logo1>' . ",------.        ,--.        ,--.                    " . "</end>\n";
+$logo .= '<logo2>' . "|  .---',---. ,-'  '-. ,---.|  ,---.  ,---. ,--.--. " . "</end>\n";
+$logo .= '<logo3>' . "|  `--,| .-. :'-.  .-'| .--'|  .-.  || .-. :|  .--' " . "</end>\n";
+$logo .= '<logo4>' . "|  |`  \   --.  |  |  \ `--.|  | |  |\   --.|  |    " . "</end>\n";
+$logo .= '<logo5>' . "`--'    `----'  `--'   `---'`--' `--' `----'`--'    " . "</end>\n";
+$logo .= "\n";
+$logo .= '<url>'   . "    https://github.com/fivefifteen/fetcher " .      "</end>\n";
+$logo .= "\n";
+$logo .= "             A <five>FIVE</end><fifteen>FIFTEEN</end> Project\n";
+$logo .= "            <fifteenwebsite>https://fivefifteen.com</end>\n";
+
+$writer = new Writer;
+$colorizer = $writer->colorizer();
 
 $app->onException(function(Throwable $e, int $exitCode) {
   $writer = new \Ahc\Cli\Output\Writer;
   $writer->colors("<red>Error</end>: {$e->getMessage()}", true);
   exit($exitCode);
 });
+
+$app->logo($colorizer->colors($logo));
+
+$app->add(new Fetcher\Command\Info, 'n');
+$app->add(new Fetcher\Command\Install, 'i');
+$app->add(new Fetcher\Command\Uninstall, 'u');
+$app->add(new Fetcher\Command\Versions, 'v');
 
 $app->handle($_SERVER['argv']);
 ?>

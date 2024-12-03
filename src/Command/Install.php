@@ -119,14 +119,14 @@ class Install extends Command {
     foreach($packages as $pkg_idx => $package_info) {
       if (!$package_info['name']) {
         if (!$quiet) {
-          $writer->colors("<yellow>Warning</end>: An unnamed package was skipped at index {$pkg_idx}", true);
+          $writer->colors("<warn>Warning</end>: <info>An unnamed package was skipped at index</end> <subject>{$pkg_idx}</end>", true);
         }
 
         continue;
       }
 
       $package_string = ($package_info['author'] || $package_info['alias_author'] ? ($package_info['author'] ?: $package_info['alias_author']) . '/' : null) . ($package_info['alias_name'] ?: $package_info['name']);
-      $writer_package_str = "<green>{$package_string}</end>";
+      $writer_package_str = "<pkg_name>{$package_string}</end>";
       $writer_version_str = null;
       $package_providers = $providers;
       $download_destination = $temp_dir;
@@ -163,7 +163,7 @@ class Install extends Command {
 
           if (!$version) continue;
 
-          $writer_version_str = "(<yellow>{$version->name}</end>)";
+          $writer_version_str = "(<pkg_version>{$version->name}</end>)";
           $download_path = null;
 
           foreach((array) $version->download_url as $url) {
@@ -172,8 +172,9 @@ class Install extends Command {
             $download_path = "{$download_destination}-{$version->name}.{$download_ext}";
 
             if (!$quiet) {
-              $action = $provider === 'file' ? 'Copying' : 'Downloading';
-              $writer->colors("<purple>{$action}</end> {$writer_package_str} {$writer_version_str}: {$download_url} -> {$download_path}...", true);
+              $action = $provider === 'file' ? 'copying' : 'downloading';
+              $action_msg = "{$writer_package_str} {$writer_version_str}: <from>{$download_url}</end> -> <to>{$download_path}</end>";
+              Format::write_action($writer, $action, $action_msg);
             }
 
             try {
@@ -186,7 +187,7 @@ class Install extends Command {
               // One failed download doesn't mean a failed installation.
 
               if (!$quiet && $verbosity) {
-                $writer->colors("<red>Quiet Error</end>: {$e->getMessage()}", true);
+                $writer->colors("<error>Quiet Error</end>: {$e->getMessage()}", true);
               }
             }
 
@@ -200,7 +201,7 @@ class Install extends Command {
           // One failed Package/Provider initialization doesn't mean a failed installation.
 
           if (!$quiet && $verbosity) {
-            $writer->colors("<red>Quiet Error</end>: {$e->getMessage()}", true);
+            $writer->colors("<error>Quiet Error</end>: {$e->getMessage()}", true);
           }
         }
 
@@ -230,7 +231,8 @@ class Install extends Command {
           }
 
           if (!$quiet) {
-            $writer->colors("<cyan>Extracting</end> {$writer_package_str} {$writer_version_str}: {$download_path} -> {$destination_path}...", true);
+            $action_msg = "{$writer_package_str} {$writer_version_str}: <from>{$download_path}</end> -> <to>{$destination_path}</end>";
+            Format::write_action($writer, 'extracting', $action_msg);
           }
 
           File::delete($destination_path);
@@ -288,7 +290,8 @@ class Install extends Command {
           File::create_directory($destination_dir);
 
           if (!$quiet) {
-            $writer->colors("<blue>Moving</end> {$writer_package_str} {$writer_version_str}: {$download_path} -> {$destination_path}...", true);
+            $action_msg = "{$writer_package_str} {$writer_version_str}: <from>{$download_path}</end> -> <to>{$destination_path}</end>";
+            Format::write_action($writer, 'moving', $action_msg);
           }
 
           rename($download_path, $destination_path);
@@ -299,7 +302,7 @@ class Install extends Command {
         $errors = true;
 
         if (!$quiet) {
-          $writer->colors("<red>Error</end>: Unable to install {$package_string}", true);
+          $writer->colors("<error>Error</end>: Unable to install {$package_string}", true);
         }
 
         if (!$ignore_errors) {
@@ -310,7 +313,7 @@ class Install extends Command {
 
     if ($save_changes && $installed_packages) {
       if (!$quiet) {
-        $writer->colors("Updating {$config_path}...", true);
+        Format::write_action($writer, 'updating', "<file>{$config_path}</end>");
       }
 
       if (!$config) $config = array();
@@ -326,7 +329,7 @@ class Install extends Command {
     $completion_msg = 'Done!';
 
     if ($errors) {
-      $completion_msg .= ' <yellow>...but with errors</end>';
+      $completion_msg .= ' <warn>...but with errors</end>';
 
       if (!File::count_files($directory)) {
         File::delete_directory($directory);

@@ -59,7 +59,7 @@ class Versions extends Command {
         // Errors here are ignored because there could be multiple Providers to try.
 
         if ($verbosity) {
-          $writer->colors("<red>Quiet Error</end>: {$e->getMessage()}", true);
+          $writer->colors("<error>Quiet Error</end>: {$e->getMessage()}", true);
         }
       }
 
@@ -82,7 +82,11 @@ class Versions extends Command {
         'Version'       => $version_name,
         'Download URL'  => $download_url
       );
-    }, array_slice($versions, 0, intval($limit))));
+    }, array_slice($versions, 0, intval($limit))), array(
+      'head'  => 'table_head',
+      'even'  => 'table_even',
+      'odd'   => 'table_odd'
+    ));
   }
 }
 ?>

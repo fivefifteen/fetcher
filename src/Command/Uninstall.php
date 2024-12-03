@@ -87,7 +87,7 @@ class Uninstall extends Command {
       foreach($packages as $pkg_idx => $package_info) {
         if (!$package_info['name']) {
           if (!$quiet) {
-            $writer->colors("<yellow>Warning</end>: An unnamed package was skipped at index {$pkg_idx}", true);
+            $writer->colors("<warn>Warning</end>: <info>An unnamed package was skipped at index</end> <subject>{$pkg_idx}</end>", true);
           }
 
           continue;
@@ -109,7 +109,7 @@ class Uninstall extends Command {
           );
         } else {
           if (!$quiet) {
-            $writer->colors("<yellow>Warning</end>: No directories found for {$package_string}", true);
+            $writer->colors("<warn>Warning</end>: <info>No directories found for</end> <subject>{$package_string}</end>", true);
           }
         }
       }
@@ -159,16 +159,17 @@ class Uninstall extends Command {
         $confirm = true;
       } else {
         $interactor = new Interactor;
-        $confirm_msg = "The following directories will be deleted:\n\n";
+        $confirm_msg = "<info>The following directories will be deleted:</end><subject>\n\n";
         $confirm_msg .= implode("\n", $directories_to_delete);
-        $confirm_msg .= "\n\nAre you sure?";
-        $confirm = $interactor->confirm($confirm_msg, 'n');
+        $confirm_msg .= "\n\n</end>";
+        $writer->colors($confirm_msg);
+        $confirm = $interactor->confirm('Are you sure?', 'n');
       }
 
       if ($confirm) {
         foreach($directories_to_delete as $dir) {
           if (!$quiet) {
-            $writer->colors("<red>Deleting</end> {$dir}...", true);
+            Format::write_action($writer, 'deleting', "<file>{$dir}</end>");
           }
 
           File::delete_directory($dir);
@@ -178,7 +179,7 @@ class Uninstall extends Command {
       }
     } else {
       if (!$quiet) {
-        $writer->colors('Nothing to uninstall', true);
+        $writer->colors('<info>Nothing to uninstall</end>', true);
       }
     }
 
@@ -228,7 +229,7 @@ class Uninstall extends Command {
 
           if ($confirm_config_delete) {
             if (!$quiet) {
-              $writer->colors("<red>Deleting</end> {$config_path}...", true);
+              Format::write_action($writer, 'deleting', "<file>{$config_path}</end>");
             }
 
             File::delete_file($config_path);
