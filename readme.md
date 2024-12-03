@@ -32,6 +32,7 @@
     - [Package & Version Parsing](#package--version-parsing)
         - [Package Aliases](#package-aliases)
 - [Configuration](#configuration)
+- [Related Projects](#related-projects)
 - [License Information](#license-information)
 
 
