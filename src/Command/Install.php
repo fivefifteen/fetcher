@@ -313,7 +313,7 @@ class Install extends Command {
 
     if ($save_changes && $installed_packages) {
       if (!$quiet) {
-        Format::write_action($writer, 'updating', "<file>{$config_path}</end>");
+        $writer->colors("<info>Updating</end> <file>{$config_path}</end>", true);
       }
 
       if (!$config) $config = array();
