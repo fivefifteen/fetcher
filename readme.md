@@ -289,6 +289,11 @@ While Fetcher can be used out of the box without any configuration, a config fil
 ```
 
 
+## Related Projects
+
+ - [Piler](https://github.com/fivefifteen/piler) - A CLI tool written in PHP that compiles and minifies JavaScript and CSS/SCSS files.
+
+
 ## License Information
 
 MIT. See the [license.md file](license.md) for more info.
