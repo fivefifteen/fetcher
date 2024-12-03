@@ -11,7 +11,7 @@
   [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fivefifteen/fetcher?style=flat-square)](https://github.com/fivefifteen/fetcher)
   [![license](https://img.shields.io/github/license/fivefifteen/fetcher.svg?style=flat-square)](https://github.com/fivefifteen/fetcher/blob/main/license.md)
 
-  <a href="https://asciinema.org/a/690098" target="_blank"><img src="https://asciinema.org/a/690098.svg" width="75%" /></a>
+  <a href="https://asciinema.org/a/693164" target="_blank"><img src="https://asciinema.org/a/693164.svg" width="75%" /></a>
 
   <a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a>
 
