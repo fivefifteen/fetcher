@@ -75,23 +75,23 @@ class Install extends Command {
       $packages = $config['dependencies'];
     }
 
-    if (isset($config['settings']) && isset($config['settings']['fetcher'])) {
-      $settings = $config['settings']['fetcher'];
+    if (isset($config['config']) && isset($config['config']['fetcher'])) {
+      $imported_config = $config['config']['fetcher'];
 
-      if (!$install_directory && isset($settings['install_directory'])) {
-        $install_directory = $settings['install_directory'];
+      if (!$install_directory && isset($imported_config['install_directory'])) {
+        $install_directory = $imported_config['install_directory'];
       }
 
-      if (!$extensions && isset($settings['extensions'])) {
-        $extensions = $settings['extensions'];
+      if (!$extensions && isset($imported_config['extensions'])) {
+        $extensions = $imported_config['extensions'];
       }
 
-      if (isset($settings['providers'])) {
-        $providers = $settings['providers'];
+      if (isset($imported_config['providers'])) {
+        $providers = $imported_config['providers'];
       }
 
-      if (isset($settings['extract'])) {
-        $extract = $settings['extract'];
+      if (isset($imported_config['extract'])) {
+        $extract = $imported_config['extract'];
       }
     }
 

@@ -275,16 +275,16 @@ While Fetcher can be used out of the box without any configuration, a config fil
 
 ```json
 {
-  "dependencies": {
-    "kenwheeler/slick": "github:~1.8.0",
-    "scss-helpers/media-queries": "npm:include-media@^2.0",
-    "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
-  },
-  "settings": {
+  "config": {
     "fetcher": {
       "extensions": ["js", "css", "scss", "md"],
       "working_directory": "content/themes/my-theme"
     }
+  },
+  "dependencies": {
+    "kenwheeler/slick": "github:~1.8.0",
+    "scss-helpers/media-queries": "npm:include-media@^2.0",
+    "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
   }
 }
 ```

@@ -63,11 +63,11 @@ class Uninstall extends Command {
       $packages = $config['dependencies'];
     }
 
-    if (isset($config['settings']) && isset($config['settings']['fetcher'])) {
-      $settings = $config['settings']['fetcher'];
+    if (isset($config['config']) && isset($config['config']['fetcher'])) {
+      $imported_config = $config['config']['fetcher'];
 
-      if (!$install_directory && isset($settings['install_directory'])) {
-        $install_directory = $settings['install_directory'];
+      if (!$install_directory && isset($imported_config['install_directory'])) {
+        $install_directory = $imported_config['install_directory'];
       }
     }
 
@@ -213,9 +213,9 @@ class Uninstall extends Command {
           $config_key_count === 1 ||
           (
             $config_key_count === 2 &&
-            isset($config['settings']) &&
-            isset($config['settings']['fetcher']) &&
-            count(array_keys($config['settings'])) === 1
+            isset($config['config']) &&
+            isset($config['config']['fetcher']) &&
+            count(array_keys($config['config'])) === 1
           )
         ) {
           $confirm_config_delete = false;
