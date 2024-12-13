@@ -4,7 +4,7 @@
 
   # Fetcher
 
-  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths. 🐶
+  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths.
 
   [![packagist package version](https://img.shields.io/packagist/v/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
   [![packagist package downloads](https://img.shields.io/packagist/dt/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
