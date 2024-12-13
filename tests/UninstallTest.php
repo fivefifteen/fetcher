@@ -149,8 +149,8 @@ class UninstallTest extends TestCase {
     $config_path = Format::build_path(self::$playground, 'fetch.json');
     $config = json_decode(file_get_contents($config_path), true);
 
-    $entry_removed = !isset($config['dependencies']['someone/something']);
-    $retained_entry = isset($config['dependencies']['cool-package']);
+    $entry_removed = !isset($config['fetcher']['dependencies']['someone/something']);
+    $retained_entry = isset($config['fetcher']['dependencies']['cool-package']);
 
     $this->assertTrue($entry_removed);
     $this->assertTrue($retained_entry);

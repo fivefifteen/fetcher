@@ -318,7 +318,7 @@ class Install extends Command {
       }
 
       if ($config) {
-        $config_json = Request::get_json($config_path);
+        $config_json = Request::get_json($config_path) ?: array();
       } else {
         $config = array();
         $config_json = array();

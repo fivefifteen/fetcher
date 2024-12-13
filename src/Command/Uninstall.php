@@ -5,6 +5,7 @@ use \Ahc\Cli\IO\Interactor;
 use \Ahc\Cli\Output\Writer;
 use \Fetcher\Helper\File;
 use \Fetcher\Helper\Format;
+use \Fetcher\Helper\Request;
 
 class Uninstall extends Command {
   static $defaults = array(
@@ -63,8 +64,8 @@ class Uninstall extends Command {
       $packages = $config['dependencies'];
     }
 
-    if (isset($config['config']) && isset($config['config']['fetcher'])) {
-      $imported_config = $config['config']['fetcher'];
+    if (isset($config['config']) && isset($config['config'])) {
+      $imported_config = $config['config'];
 
       if (!$install_directory && isset($imported_config['install_directory'])) {
         $install_directory = $imported_config['install_directory'];
@@ -188,6 +189,13 @@ class Uninstall extends Command {
         $writer->colors("Updating {$config_path}...", true);
       }
 
+      if ($config) {
+        $config_json = Request::get_json($config_path) ?: array();
+      } else {
+        $config = array();
+        $config_json = array();
+      }
+
       $existing_dependencies = isset($config['dependencies']) ? $config['dependencies'] : array();
       $package_names = array_column($packages_to_uninstall, 'name');
 
@@ -202,21 +210,16 @@ class Uninstall extends Command {
       }
 
       $config['dependencies'] = $existing_dependencies;
+      $config_json['fetcher'] = $config;
 
-      file_put_contents($config_path, json_encode($config, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+      file_put_contents($config_path, json_encode($config_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 
-      if (empty($config['dependencies'])) {
-        $config_key_count = count(array_keys($config));
+      if (empty($config['dependencies']) && basename($config_path) !== 'composer.json') {
+        $config_key_count = count(array_keys($config_json));
 
         if (
           $fresh_start ||
-          $config_key_count === 1 ||
-          (
-            $config_key_count === 2 &&
-            isset($config['config']) &&
-            isset($config['config']['fetcher']) &&
-            count(array_keys($config['config'])) === 1
-          )
+          ($config_key_count === 1 && isset($config_json['fetcher']))
         ) {
           $confirm_config_delete = false;
 
