@@ -42,8 +42,13 @@ class InstallTest extends TestCase {
 
     $mock
       ->shouldReceive('get_json')
-      ->with('./tests/files/fetch.json')
+      ->with('./tests/data/files/fetch.json')
       ->andReturn(json_decode(file_get_contents(Format::build_path('tests', 'data', 'files', 'fetch.json')), true));
+
+    $mock
+      ->shouldReceive('get_json')
+      ->with('./tests/data/files/composer.json')
+      ->andReturn(json_decode(file_get_contents(Format::build_path('tests', 'data', 'files', 'composer.json')), true));
 
     $mock
       ->shouldReceive('make_request')
@@ -247,7 +252,33 @@ class InstallTest extends TestCase {
 
   public function testInstallViaConfig1() {
     $install_path = Format::build_path('playground', 'InstallTest', 'testInstallViaConfig1');
-    $config_path = Format::build_path('files', 'fetch.json');
+    $config_path = Format::build_path('data', 'files', 'fetch.json');
+    $cmd = new Install();
+
+    $cmd->run(array(
+      'config_path'       => $config_path,
+      'install_directory' => $install_path,
+      'quiet'             => true,
+      'working_directory' => './tests'
+    ));
+
+    $pkg_path = Format::build_path('./tests', $install_path, 'kodie', 'md5-file');
+    $test_file_exists = is_file(Format::build_path($pkg_path, 'test.js'));
+    $files_count = File::count_files($pkg_path);
+
+    $pkg_path2 = Format::build_path('./tests', $install_path, 'someone', 'something');
+    $test_file_exists2 = is_file(Format::build_path($pkg_path2, 'test.js'));
+    $files_count2 = File::count_files($pkg_path2);
+
+    $this->assertTrue($test_file_exists);
+    $this->assertSame(1, $files_count);
+    $this->assertTrue($test_file_exists2);
+    $this->assertSame(1, $files_count2);
+  }
+
+  public function testInstallViaConfig2() {
+    $install_path = Format::build_path('playground', 'InstallTest', 'testInstallViaConfig2');
+    $config_path = Format::build_path('data', 'files', 'composer.json');
     $cmd = new Install();
 
     $cmd->run(array(

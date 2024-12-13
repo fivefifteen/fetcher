@@ -1,0 +1,12 @@
+{
+  "fetcher": {
+    "config": {
+      "extensions": ["js"]
+    },
+    "dependencies": {
+      "cool-package": "npm:md5-file@latest",
+      "kodie/md5-file": "github:^4.0",
+      "someone/something": "https://example.com/download.zip"
+    }
+  }
+}

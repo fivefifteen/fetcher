@@ -32,6 +32,7 @@
     - [Package & Version Parsing](#package--version-parsing)
         - [Package Aliases](#package-aliases)
 - [Configuration](#configuration)
+    - [Configuration via Composer](#configuration-via-composer)
 - [Related Projects](#related-projects)
 - [License Information](#license-information)
 
@@ -275,16 +276,47 @@ While Fetcher can be used out of the box without any configuration, a config fil
 
 ```json
 {
-  "config": {
-    "fetcher": {
+  "fetcher": {
+    "config": {
       "extensions": ["js", "css", "scss", "md"],
       "working_directory": "content/themes/my-theme"
+    },
+    "dependencies": {
+      "kenwheeler/slick": "github:~1.8.0",
+      "scss-helpers/media-queries": "npm:include-media@^2.0",
+      "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
     }
+  }
+}
+```
+
+
+### Configuration via Composer
+
+Fetcher also supports loading configuration options from a `composer.json` file, except for in this case Fetcher checks for it's key under the `extra` section like so:
+
+```json
+{
+  "name": "username/package",
+  "version": "0.0.1",
+  "require-dev": {
+    "fivefifteen/fetcher": "*"
   },
-  "dependencies": {
-    "kenwheeler/slick": "github:~1.8.0",
-    "scss-helpers/media-queries": "npm:include-media@^2.0",
-    "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
+  "scripts": {
+    "fetch": "./vendor/bin/fetcher install"
+  },
+  "extra": {
+    "fetcher": {
+      "config": {
+        "extensions": ["js", "css", "scss", "md"],
+        "working_directory": "content/themes/my-theme"
+      },
+      "dependencies": {
+        "kenwheeler/slick": "github:~1.8.0",
+        "scss-helpers/media-queries": "npm:include-media@^2.0",
+        "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
+      }
+    }
   }
 }
 ```

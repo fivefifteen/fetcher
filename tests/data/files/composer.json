@@ -1,0 +1,22 @@
+{
+  "name": "username/package",
+  "version": "0.0.1",
+  "require-dev": {
+    "fivefifteen/fetcher": "*"
+  },
+  "scripts": {
+    "fetch": "./vendor/bin/fetcher install"
+  },
+  "extra": {
+    "fetcher": {
+      "config": {
+        "extensions": ["js", "css", "scss", "md"]
+      },
+      "dependencies": {
+        "cool-package": "npm:md5-file@latest",
+        "kodie/md5-file": "github:^4.0",
+        "someone/something": "https://example.com/download.zip"
+      }
+    }
+  }
+}

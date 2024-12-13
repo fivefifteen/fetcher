@@ -5,6 +5,7 @@ use \Ahc\Cli\Output\Writer;
 use \Fetcher\Package;
 use \Fetcher\Helper\File;
 use \Fetcher\Helper\Format;
+use \Fetcher\Helper\Request;
 
 class Install extends Command {
   static $defaults = array(
@@ -75,8 +76,8 @@ class Install extends Command {
       $packages = $config['dependencies'];
     }
 
-    if (isset($config['config']) && isset($config['config']['fetcher'])) {
-      $imported_config = $config['config']['fetcher'];
+    if (isset($config['config']) && isset($config['config'])) {
+      $imported_config = $config['config'];
 
       if (!$install_directory && isset($imported_config['install_directory'])) {
         $install_directory = $imported_config['install_directory'];
@@ -95,7 +96,7 @@ class Install extends Command {
       }
     }
 
-    $packages = Format::parse_packages_list($packages);
+    $packages = Format::parse_packages_list($packages ?: array());
     $providers = Format::parse_comma_list($providers);
     $extensions = Format::parse_comma_list($extensions);
 
@@ -316,12 +317,18 @@ class Install extends Command {
         $writer->colors("<info>Updating</end> <file>{$config_path}</end>", true);
       }
 
-      if (!$config) $config = array();
+      if ($config) {
+        $config_json = Request::get_json($config_path);
+      } else {
+        $config = array();
+        $config_json = array();
+      }
 
       $existing_dependencies = isset($config['dependencies']) ? $config['dependencies'] : array();
       $config['dependencies'] = array_merge($existing_dependencies, $installed_packages);
+      $config_json['fetcher'] = $config;
 
-      file_put_contents($config_path, json_encode($config, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+      file_put_contents($config_path, json_encode($config_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     }
 
     File::delete_directory($temp_dir);
