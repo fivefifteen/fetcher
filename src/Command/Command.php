@@ -22,6 +22,7 @@ abstract class Command extends \Ahc\Cli\Input\Command {
         $json = Request::get_json($config_path);
       } elseif ($is_default_check && file_exists($alt_config_path)) {
         $json = Request::get_json($alt_config_path);
+        $config_path = $alt_config_path;
       }
 
       if ($json) {

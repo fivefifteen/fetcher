@@ -76,7 +76,7 @@ class Install extends Command {
       $packages = $config['dependencies'];
     }
 
-    if (isset($config['config']) && isset($config['config'])) {
+    if (isset($config['config'])) {
       $imported_config = $config['config'];
 
       if (!$install_directory && isset($imported_config['install_directory'])) {
