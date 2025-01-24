@@ -71,7 +71,7 @@ fetcher install [packages...]
 fetcher i [packages...]
 ```
 
-Installs the defined packages. If no packages are defined, fetcher will attempt to locate a `fetch.json` file and install packages located in it's `dependencies` section.
+Installs the defined packages. If no packages are defined, fetcher will attempt to locate a `fetch.json` file and install packages located in it's `dependencies` section under the `fetcher` key.
 
 *Note: Fetcher only installs defined dependencies. Child dependencies such as ones found in `composer.json` or `package.json` are ignored.*
 
