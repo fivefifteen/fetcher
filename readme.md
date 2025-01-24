@@ -222,7 +222,7 @@ These options can be used with all commands:
 
 Because Fetcher supports multiple package providers and those providers have their own unique ways of naming and structuring packages, Fetcher has it's own unique but familiar syntax for package names and versions.
 
-Fetcher uses the [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for pasing version constraints.
+Fetcher uses [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for pasing version constraints.
 
 ##### Examples
 
