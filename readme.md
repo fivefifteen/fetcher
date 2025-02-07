@@ -4,7 +4,7 @@
 
   # Fetcher
 
-  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths. 🐶
+  A package manager written in PHP that supports installing dependencies from [GitHub](https://github.org), [npm](https://npmjs.com), custom URLs, and local file paths.
 
   [![packagist package version](https://img.shields.io/packagist/v/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
   [![packagist package downloads](https://img.shields.io/packagist/dt/fivefifteen/fetcher.svg?style=flat-square)](https://packagist.org/packages/fivefifteen/fetcher)
@@ -71,7 +71,7 @@ fetcher install [packages...]
 fetcher i [packages...]
 ```
 
-Installs the defined packages. If no packages are defined, fetcher will attempt to locate a `fetch.json` file and install packages located in it's `dependencies` section.
+Installs the defined packages. If no packages are defined, fetcher will attempt to locate a `fetch.json` file and install packages located in it's `dependencies` section under the `fetcher` key.
 
 *Note: Fetcher only installs defined dependencies. Child dependencies such as ones found in `composer.json` or `package.json` are ignored.*
 
@@ -222,7 +222,7 @@ These options can be used with all commands:
 
 Because Fetcher supports multiple package providers and those providers have their own unique ways of naming and structuring packages, Fetcher has it's own unique but familiar syntax for package names and versions.
 
-Fetcher uses the [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for passing version constraints.
+Fetcher uses [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for passing version constraints.
 
 ##### Examples
 
