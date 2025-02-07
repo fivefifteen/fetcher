@@ -80,7 +80,7 @@ Installs the defined packages. If no packages are defined, fetcher will attempt 
 
  - `[-c|--config]` - Path to the config file [default: `fetch.json`]
  - `[-d|--install-directory]` - Path where packages should be installed to [default: `fetched`]
- - `[-e|--extensions]` - A comma seperated list of extensions to extract from the packages
+ - `[-e|--extensions]` - A comma separated list of extensions to extract from the packages
  - `[-f|--fresh-start]` - Deletes the entire fetched directory before running installation
  - `[-i|--ignore-errors]` - Ignore any errors that occur and continue installing the rest of the packages
  - `[-p|--providers]` - The providers to search for packages from and their order [default: `github,npm`]
@@ -222,7 +222,7 @@ These options can be used with all commands:
 
 Because Fetcher supports multiple package providers and those providers have their own unique ways of naming and structuring packages, Fetcher has it's own unique but familiar syntax for package names and versions.
 
-Fetcher uses [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for pasing version constraints.
+Fetcher uses [Composer's semver module](https://getcomposer.org/doc/articles/versions.md#writing-version-constraints) for passing version constraints.
 
 ##### Examples
 
