@@ -57,7 +57,7 @@ class File {
     $bytes = @file_put_contents($save_path, $contents);
 
     if ($bytes === false) {
-      throw new \Error("An error occured while attempting to write to $save_path");
+      throw new \Error("An error occurred while attempting to write to $save_path");
     }
 
     return $bytes;

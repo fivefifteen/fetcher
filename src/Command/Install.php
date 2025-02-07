@@ -30,7 +30,7 @@ class Install extends Command {
       ->argument('[packages...]', 'Packages to install')
       ->option('-c --config [path]', 'Path to a config JSON file', 'strval', self::$defaults['config_path'])
       ->option('-d --install-directory [path]', 'Directory path where packages should be installed to', 'strval', self::$defaults['install_directory'])
-      ->option('-e --extensions', 'A comma seperated list of extensions to extract from the packages')
+      ->option('-e --extensions', 'A comma separated list of extensions to extract from the packages')
       ->option('-f --fresh-start', 'Deletes the entire fetched directory before running installation')
       ->option('-i --ignore-errors', 'Ignore any errors that may occur and continue with installation')
       ->option('-p --providers [providers]', 'The repository providers to search and what order to search them in', 'strval', self::$defaults['providers'])
