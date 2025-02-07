@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e148d660e70a47d11c93e6c313eb7f90",
+    "content-hash": "802a01a0c2f02b22875cd00251ae02cf",
     "packages": [
         {
             "name": "adhocore/cli",
-            "version": "v1.9.2",
+            "version": "v1.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adhocore/php-cli.git",
-                "reference": "cd0152f74970afffe0396aa86f827f23ca07c1e4"
+                "reference": "86be16e3c3b42d76fcdb32529bcded0fedb925d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adhocore/php-cli/zipball/cd0152f74970afffe0396aa86f827f23ca07c1e4",
-                "reference": "cd0152f74970afffe0396aa86f827f23ca07c1e4",
+                "url": "https://api.github.com/repos/adhocore/php-cli/zipball/86be16e3c3b42d76fcdb32529bcded0fedb925d3",
+                "reference": "86be16e3c3b42d76fcdb32529bcded0fedb925d3",
                 "shasum": ""
             },
             "require": {
@@ -28,6 +28,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
                 "psr-4": {
                     "Ahc\\Cli\\": "src/"
                 }
@@ -62,7 +65,7 @@
             ],
             "support": {
                 "issues": "https://github.com/adhocore/php-cli/issues",
-                "source": "https://github.com/adhocore/php-cli/tree/v1.9.2"
+                "source": "https://github.com/adhocore/php-cli/tree/v1.9.3"
             },
             "funding": [
                 {
@@ -74,7 +77,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-01T01:26:12+00:00"
+            "time": "2024-12-04T03:40:29+00:00"
         },
         {
             "name": "composer/semver",
@@ -159,16 +162,16 @@
         },
         {
             "name": "splitbrain/php-archive",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/splitbrain/php-archive.git",
-                "reference": "d274e5190ba309777926348900cf9578d9e533c9"
+                "reference": "d9d4eaac12a6587727b8e539946dd06cac8b3f02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/splitbrain/php-archive/zipball/d274e5190ba309777926348900cf9578d9e533c9",
-                "reference": "d274e5190ba309777926348900cf9578d9e533c9",
+                "url": "https://api.github.com/repos/splitbrain/php-archive/zipball/d9d4eaac12a6587727b8e539946dd06cac8b3f02",
+                "reference": "d9d4eaac12a6587727b8e539946dd06cac8b3f02",
                 "shasum": ""
             },
             "require": {
@@ -213,9 +216,15 @@
             ],
             "support": {
                 "issues": "https://github.com/splitbrain/php-archive/issues",
-                "source": "https://github.com/splitbrain/php-archive/tree/1.3.1"
+                "source": "https://github.com/splitbrain/php-archive/tree/1.4.0"
             },
-            "time": "2022-03-23T09:21:55+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/splitbrain",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-09T14:08:44+00:00"
         }
     ],
     "packages-dev": [
@@ -415,16 +424,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b"
+                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8eea230464783aa9671db8eea6f8c6ac5285794b",
-                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
+                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
                 "shasum": ""
             },
             "require": {
@@ -467,9 +476,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
             },
-            "time": "2024-10-08T18:51:32+00:00"
+            "time": "2024-12-30T11:07:19+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -912,16 +921,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.38",
+            "version": "10.5.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a86773b9e887a67bc53efa9da9ad6e3f2498c132"
+                "reference": "bd68a781d8e30348bc297449f5234b3458267ae8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a86773b9e887a67bc53efa9da9ad6e3f2498c132",
-                "reference": "a86773b9e887a67bc53efa9da9ad6e3f2498c132",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bd68a781d8e30348bc297449f5234b3458267ae8",
+                "reference": "bd68a781d8e30348bc297449f5234b3458267ae8",
                 "shasum": ""
             },
             "require": {
@@ -931,7 +940,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.12.0",
+                "myclabs/deep-copy": "^1.12.1",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.1",
@@ -993,7 +1002,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.38"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.45"
             },
             "funding": [
                 {
@@ -1009,7 +1018,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-28T13:06:21+00:00"
+            "time": "2025-02-06T16:08:12+00:00"
         },
         {
             "name": "sebastian/cli-parser",
