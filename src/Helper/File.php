@@ -78,11 +78,10 @@ class File {
   }
 
   static function get_archive_instance($file) {
-    switch(pathinfo($file, PATHINFO_EXTENSION)) {
-      case 'gz':
-      case 'tgz':
-      case 'bz2':
-      case 'tbz':
+    $type = self::get_archive_type($file);
+
+    switch($type) {
+      case 'tar':
         return new Tar();
       case 'zip':
         return new Zip();
@@ -91,9 +90,50 @@ class File {
     }
   }
 
-  static function is_archive_file($file) {
+  static function get_archive_type($file) {
+    $type = false;
     $ext = pathinfo($file, PATHINFO_EXTENSION);
-    return in_array($ext, array('gz', 'tgz', 'bz2', 'tbz', 'zip'));
+
+    if ($ext) {
+      switch($ext) {
+        case 'gz':
+        case 'tgz':
+        case 'bz2':
+        case 'tbz':
+          $type = 'tar';
+          break;
+        case 'zip':
+          $type = 'zip';
+          break;
+        default:
+          throw new \Error("Invalid archive file $file");
+      }
+    } else {
+      $info = new \finfo(FILEINFO_MIME);
+      $mime = $info->file($file);
+
+      if ($mime) {
+        switch(preg_replace('/;.*$/', '', $mime)) {
+          case 'application/gzip':
+          case 'application/x-gzip':
+          case 'application/x-bzip2':
+            $type = 'tar';
+            break;
+          case 'application/zip':
+          case 'application/x-zip-compressed':
+            $type = 'zip';
+            break;
+          default:
+            throw new \Error("Invalid archive file $file");
+        }
+      }
+    }
+
+    return $type;
+  }
+
+  static function is_archive_file($file) {
+    return (bool) self::get_archive_type($file);
   }
 }
 ?>
