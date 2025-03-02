@@ -20,6 +20,7 @@
 
 ## Table of Contents
 
+- [Why?](#why)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -35,6 +36,11 @@
     - [Configuration via Composer](#configuration-via-composer)
 - [Related Projects](#related-projects)
 - [License Information](#license-information)
+
+
+## Why?
+
+Fetcher was primarily built for downloading frontend packages without the need for Node.js/npm. It pairs nicely with [Piler](https://github.com/fivefifteen/piler) to handle all of your frontend dependency needs using only PHP.
 
 
 ## Requirements
