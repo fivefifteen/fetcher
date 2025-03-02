@@ -78,10 +78,12 @@ Installs the defined packages. If no packages are defined, fetcher will attempt 
 
 ##### Options
 
+ - `[-a|--auth]` - Path to an auth file for installing from private repositories (See: [Installing from Private Repositories](#installing-from-private-repositories)) [default: `auth.json`]
  - `[-c|--config]` - Path to the config file [default: `fetch.json`]
  - `[-d|--install-directory]` - Path where packages should be installed to [default: `fetched`]
  - `[-e|--extensions]` - A comma separated list of extensions to extract from the packages
  - `[-f|--fresh-start]` - Deletes the entire fetched directory before running installation
+ - `[-h|--header]` - The headers to use in any requests
  - `[-i|--ignore-errors]` - Ignore any errors that occur and continue installing the rest of the packages
  - `[-p|--providers]` - The providers to search for packages from and their order [default: `github,npm`]
  - `[-q|--quiet]` - Run but don't output anything in the terminal
@@ -316,6 +318,23 @@ Fetcher also supports loading configuration options from a `composer.json` file,
         "scss-helpers/media-queries": "npm:include-media@^2.0",
         "wordpress/wordpress-core.css": "https://gist.github.com/kodie/d7da9f3db934adea8e44ee38d1885bf8/archive/aaf369827720c564ec3b6c43cba8b00748dbd73d.zip"
       }
+    }
+  }
+}
+```
+
+### Installing from Private Repositories
+
+Fetcher will check for the existence of an `auth.json` file (or whatever `--auth` is set to) and that file is expected to be formatted exactly the way [Composer would expect it to be](https://getcomposer.org/doc/articles/authentication-for-private-packages.md#manual-http-basic). Currently only the `http-basic` method of authentication is supported.
+
+For example, if you would like to install from private GitHub repositories, you would want to create a [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) (giving it read permissions to whatever repositories you would like to give Fetcher access to), and then create an `auth.json` file with the access token like so:
+
+```json
+{
+  "http-basic": {
+    "api.github.com": {
+       "username": "token",
+       "password": "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2mB"
     }
   }
 }

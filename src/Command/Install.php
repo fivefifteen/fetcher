@@ -9,9 +9,11 @@ use \Fetcher\Helper\Request;
 
 class Install extends Command {
   static $defaults = array(
+    'auth_path'         => 'auth.json',
     'config_path'       => 'fetch.json',
     'extensions'        => null,
     'extract'           => true,
+    'header'            => array(),
     'install_directory' => 'fetched',
     'fresh_start'       => false,
     'ignore_errors'     => false,
@@ -28,10 +30,12 @@ class Install extends Command {
 
     $this
       ->argument('[packages...]', 'Packages to install')
+      ->option('-a --auth [path]', 'Path to an auth JSON file for installing from private repositories', 'strval', self::$defaults['auth_path'])
       ->option('-c --config [path]', 'Path to a config JSON file', 'strval', self::$defaults['config_path'])
       ->option('-d --install-directory [path]', 'Directory path where packages should be installed to', 'strval', self::$defaults['install_directory'])
       ->option('-e --extensions', 'A comma separated list of extensions to extract from the packages')
       ->option('-f --fresh-start', 'Deletes the entire fetched directory before running installation')
+      ->option('-h --header [headers...]', 'The headers to use in any requests')
       ->option('-i --ignore-errors', 'Ignore any errors that may occur and continue with installation')
       ->option('-p --providers [providers]', 'The repository providers to search and what order to search them in', 'strval', self::$defaults['providers'])
       ->option('-q --quiet', 'Run but don\'t output anything in the terminal')
@@ -48,11 +52,13 @@ class Install extends Command {
 
   public function execute() {
     $this->run(array(
+      'auth_path'         => $this->auth,
       'config_path'       => $this->config,
       'install_directory' => $this->installDirectory,
       'extensions'        => $this->extensions,
       'extract'           => $this->extract,
       'fresh_start'       => $this->freshStart,
+      'header'            => $this->header,
       'ignore_errors'     => $this->ignoreErrors,
       'packages'          => $this->packages,
       'providers'         => $this->providers,
@@ -95,6 +101,12 @@ class Install extends Command {
         $extract = $imported_config['extract'];
       }
     }
+
+    $auth_path = Format::build_path($working_directory, $auth_path);
+    $auth = self::load_auth($auth_path, $quiet);
+
+    Request::$auth = $auth;
+    Request::$header = $header;
 
     $packages = Format::parse_packages_list($packages ?: array());
     $providers = Format::parse_comma_list($providers);
@@ -170,7 +182,7 @@ class Install extends Command {
           foreach((array) $version->download_url as $url) {
             $download_url = $url;
             $download_ext = pathinfo($download_url, PATHINFO_EXTENSION);
-            $download_path = "{$download_destination}-{$version->name}.{$download_ext}";
+            $download_path = "{$download_destination}-{$version->name}" . ($download_ext ? ".{$download_ext}" : null);
 
             if (!$quiet) {
               $action = $provider === 'file' ? 'copying' : 'downloading';

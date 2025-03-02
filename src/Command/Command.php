@@ -10,6 +10,32 @@ abstract class Command extends \Ahc\Cli\Input\Command {
     parent::__construct($command, $description);
   }
 
+  public function load_auth($auth_path, $quiet = false) {
+    $writer = new Writer();
+    $auth = false;
+    $json = false;
+
+    if (file_exists($auth_path)) {
+      $json = Request::get_json($auth_path);
+
+      if ($json) {
+        if (isset($json['http-basic'])) {
+          $auth = $json['http-basic'];
+        }
+      }
+
+      if (!$auth) {
+        throw new \Error("An auth file was found but it didn't have any valid data for Fetcher");
+      }
+    }
+
+    if (!$quiet && $auth) {
+      $writer->colors("<info>Loaded</end> <subject>{$auth_path}</end>", true);
+    }
+
+    return $auth;
+  }
+
   public function load_config($config_path, $quiet = false) {
     $writer = new Writer();
     $config = false;

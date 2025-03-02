@@ -2,6 +2,39 @@
 namespace Fetcher\Helper;
 
 class Request {
+  static $auth = array();
+  static $header = array();
+
+  static function apply_auth_header($url) {
+    $header = self::$header;
+
+    $url_parts = parse_url($url);
+
+    if ($url_parts && isset($url_parts['host'])) {
+      $host = $url_parts['host'];
+
+      if (isset(self::$auth[$host])) {
+        $host_auth = self::$auth[$host];
+        $username = null;
+        $password = null;
+
+        if (isset($host_auth['username'])) {
+          $username = $host_auth['username'];
+        }
+
+        if (isset($host_auth['password'])) {
+          $password = $host_auth['password'];
+        }
+
+        if ($username && $password) {
+          $header[] = "Authorization: {$username} {$password}";
+        }
+      }
+    }
+
+    return $header;
+  }
+
   static function get_json($url) {
     $response = self::make_request($url);
     $json = @json_decode($response, true);
@@ -23,9 +56,12 @@ class Request {
   static function make_request($url) {
     global $version;
 
+    $header = self::apply_auth_header($url);
+
     $context = stream_context_create(array(
       'http' => array(
-        'user_agent' => 'Fetcher v' . $version
+        'header'      => $header,
+        'user_agent'  => 'Fetcher v' . $version
       )
     ));
 
