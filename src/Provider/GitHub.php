@@ -16,18 +16,6 @@ class GitHub extends Provider {
   private $git_commits_data;
   private $git_tags_data;
 
-  private function get_alt_download_url($version_name, $package_name, $package_author) {
-    $alt_download_url = false;
-
-    if (Format::is_version_string($version_name)) {
-      $alt_download_url = self::get_download_url("v{$version_name}", $package_name, $package_author);
-    } elseif (Format::is_prefixed_version_string($version_name)) {
-      $alt_download_url = self::get_download_url(substr($version_name, 1), $package_name, $package_author);
-    }
-
-    return $alt_download_url;
-  }
-
   private function get_branches_data($package_name, $package_author) {
     if (!$this->git_branches_data) {
       $url = Format::build_url(self::$api_base, 'repos', $package_author, $package_name, 'branches');
@@ -47,6 +35,29 @@ class GitHub extends Provider {
   }
 
   public function get_download_url($version_name, $package_name, $package_author) {
+    $download_url = array(
+      self::get_download_url_method_1($version_name, $package_name, $package_author),
+    );
+
+    if ($download_url_alt_1 = self::get_download_url_alt(1, $version_name, $package_name, $package_author)) {
+      $download_url[] = $download_url_alt_1;
+    }
+
+    $download_url[] = self::get_download_url_method_2($version_name, $package_name, $package_author);
+
+    if ($download_url_alt_2 = self::get_download_url_alt(2, $version_name, $package_name, $package_author)) {
+      $download_url[] = $download_url_alt_2;
+    }
+
+    return $download_url;
+  }
+
+  public function get_download_url_method_1($version_name, $package_name, $package_author) {
+    $version_name = preg_replace('/^(#|dev-|tag-)/', '', $version_name);
+    return Format::build_url(self::$api_base, 'repos', $package_author, $package_name, 'tarball', $version_name);
+  }
+
+  public function get_download_url_method_2($version_name, $package_name, $package_author) {
     $download_url_parts = array();
     $version_type = self::get_version_type($version_name);
 
@@ -69,10 +80,32 @@ class GitHub extends Provider {
     return Format::build_url($download_url_parts) . '.zip';
   }
 
+  private function get_download_url_alt($method, $version_name, $package_name, $package_author) {
+    $alt_download_url = false;
+
+    if (Format::is_version_string($version_name)) {
+      $alt_download_url = self::{"get_download_url_method_{$method}"}("v{$version_name}", $package_name, $package_author);
+    } elseif (Format::is_prefixed_version_string($version_name)) {
+      $alt_download_url = self::{"get_download_url_method_{$method}"}(substr($version_name, 1), $package_name, $package_author);
+    }
+
+    return $alt_download_url;
+  }
+
   public function get_latest_version_name($package_name, $package_author) {
     $tags_data = self::get_tags_data($package_name, $package_author);
-    $latest_tag_data = reset($tags_data);
-    return $latest_tag_data['name'];
+
+    if (!empty($tags_data)) {
+      $latest_tag_data = reset($tags_data);
+
+      if (isset($latest_tag_data['name'])) {
+        return $latest_tag_data['name'];
+      }
+    }
+
+    $package_data = self::get_package_data($package_name, $package_author);
+
+    return 'dev-' . $package_data['default_branch'];
   }
 
   public function get_package_data($package_name, $package_author) {
@@ -124,10 +157,6 @@ class GitHub extends Provider {
     }
 
     $download_url = self::get_download_url($version_name, $package_name, $package_author);
-
-    if ($alt_download_url = self::get_alt_download_url($version_name, $package_name, $package_author)) {
-      $download_url = array($download_url, $alt_download_url);
-    }
 
     return new Version($version_name, $download_url);
   }
