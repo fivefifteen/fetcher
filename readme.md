@@ -34,6 +34,7 @@
         - [Package Aliases](#package-aliases)
 - [Configuration](#configuration)
     - [Configuration via Composer](#configuration-via-composer)
+    - [Installing from Private Repositories](#installing-from-private-repositories)
 - [Related Projects](#related-projects)
 - [License Information](#license-information)
 
