@@ -105,8 +105,6 @@ class File {
         case 'zip':
           $type = 'zip';
           break;
-        default:
-          throw new \Error("Invalid archive file $file");
       }
     } else {
       $info = new \finfo(FILEINFO_MIME);
@@ -123,8 +121,6 @@ class File {
           case 'application/x-zip-compressed':
             $type = 'zip';
             break;
-          default:
-            throw new \Error("Invalid archive file $file");
         }
       }
     }
