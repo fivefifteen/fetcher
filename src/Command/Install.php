@@ -105,8 +105,8 @@ class Install extends Command {
     $auth_path = Format::build_path($working_directory, $auth_path);
     $auth = self::load_auth($auth_path, $quiet);
 
-    Request::$auth = $auth;
-    Request::$header = $header;
+    if ($auth) Request::$auth = $auth;
+    if ($header) Request::$header = $header;
 
     $packages = Format::parse_packages_list($packages ?: array());
     $providers = Format::parse_comma_list($providers);
