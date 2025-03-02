@@ -39,28 +39,34 @@ class GitHubTest extends TestCase {
     $provider = new GitHubProvider;
     $download_url = $provider->get_download_url('dev-master', 'md5-file', 'kodie');
 
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/heads/master.zip', $download_url);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/master', $download_url[0]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/heads/master.zip', $download_url[1]);
   }
 
   public function testGetDownloadUrl2() {
     $provider = new GitHubProvider;
     $download_url = $provider->get_download_url('#f4ed4ca', 'md5-file', 'kodie');
 
-    $this->assertSame('https://github.com/kodie/md5-file/archive/f4ed4ca.zip', $download_url);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/f4ed4ca', $download_url[0]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/f4ed4ca.zip', $download_url[1]);
   }
 
   public function testGetDownloadUrl3() {
     $provider = new GitHubProvider;
     $download_url = $provider->get_download_url('3.2.3', 'md5-file', 'kodie');
 
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.2.3.zip', $download_url);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/3.2.3', $download_url[0]);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/v3.2.3', $download_url[1]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.2.3.zip', $download_url[2]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $download_url[3]);
   }
 
   public function testGetDownloadUrl4() {
     $provider = new GitHubProvider;
     $download_url = $provider->get_download_url('tag-v3.2.3', 'md5-file', 'kodie');
 
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $download_url);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/v3.2.3', $download_url[0]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $download_url[1]);
   }
 
   public function testGetGetLatestVersionName1() {
@@ -75,8 +81,10 @@ class GitHubTest extends TestCase {
     $version = $provider->get_version('3.1.1', 'md5-file', 'kodie');
 
     $this->assertSame('3.1.1', $version->name);
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.1.1.zip', $version->download_url[0]);
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.1.1.zip', $version->download_url[1]);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/3.1.1', $version->download_url[0]);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/v3.1.1', $version->download_url[1]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.1.1.zip', $version->download_url[2]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.1.1.zip', $version->download_url[3]);
   }
 
   public function testGetVersion2() {
@@ -84,8 +92,10 @@ class GitHubTest extends TestCase {
     $version = $provider->get_version('v3.2.3', 'md5-file', 'kodie');
 
     $this->assertSame('v3.2.3', $version->name);
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $version->download_url[0]);
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.2.3.zip', $version->download_url[1]);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/v3.2.3', $version->download_url[0]);
+    $this->assertSame('https://api.github.com/repos/kodie/md5-file/tarball/3.2.3', $version->download_url[1]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/v3.2.3.zip', $version->download_url[2]);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/tags/3.2.3.zip', $version->download_url[3]);
   }
 
   public function testGetVersions1() {
@@ -93,7 +103,7 @@ class GitHubTest extends TestCase {
     $versions = $provider->get_versions('md5-file', 'kodie');
 
     $this->assertSame('#e8201ed', $versions[42]->name);
-    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/heads/v2.zip', $versions[15]->download_url);
+    $this->assertSame('https://github.com/kodie/md5-file/archive/refs/heads/v2.zip', $versions[15]->download_url[1]);
   }
 }
 ?>
