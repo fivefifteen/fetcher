@@ -31,7 +31,7 @@ class File {
 
     $cwd = getcwd();
     $realpath = realpath($dir);
-    if (!$dir || $realpath === $cwd || !str_starts_with($realpath, $cwd)) {
+    if (!$dir || $realpath === $cwd || $realpath === '/') {
       throw new \Error("Safety net triggered while trying to delete {$dir}");
       exit(1);
     }
