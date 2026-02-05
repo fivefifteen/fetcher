@@ -5,11 +5,19 @@ class Format {
   static function build_path(...$path_parts) {
     $parts = array();
 
+    $is_absolute = !empty($path_parts) && is_string($path_parts[0]) && str_starts_with($path_parts[0], '/');
+
     array_walk_recursive($path_parts, function($part) use(&$parts) {
       $parts[] = trim($part, DIRECTORY_SEPARATOR);
     });
 
-    return implode(DIRECTORY_SEPARATOR, $parts);
+    $path = implode(DIRECTORY_SEPARATOR, $parts);
+
+    if ($is_absolute) {
+      $path = '/' . $path;
+    }
+
+    return $path;
   }
 
   static function build_url(...$url_parts) {

@@ -11,6 +11,42 @@ class FormatTest extends TestCase {
     $this->assertSame('./path/to/somewhere/and/some/file.php', $url);
   }
 
+  public function testPathBuilding_RelativePath() {
+    $path = Format::build_path('fetched', 'packages', 'test.zip');
+
+    $this->assertSame('fetched/packages/test.zip', $path);
+  }
+
+  public function testPathBuilding_RelativePathWithDot() {
+    $path = Format::build_path('.', 'fetched', 'packages');
+
+    $this->assertSame('./fetched/packages', $path);
+  }
+
+  public function testPathBuilding_AbsolutePath() {
+    $path = Format::build_path('/home/user/projects', 'fetched', 'packages');
+
+    $this->assertSame('/home/user/projects/fetched/packages', $path);
+  }
+
+  public function testPathBuilding_AbsolutePathSingleArgument() {
+    $path = Format::build_path('/home/user/projects/fetched');
+
+    $this->assertSame('/home/user/projects/fetched', $path);
+  }
+
+  public function testPathBuilding_AbsolutePathWithTrailingSlashes() {
+    $path = Format::build_path('/home/user/projects/', 'fetched/', 'packages/');
+
+    $this->assertSame('/home/user/projects/fetched/packages', $path);
+  }
+
+  public function testPathBuilding_AbsolutePathWithArrays() {
+    $path = Format::build_path('/home/user/', array('projects', 'fetched'), 'packages');
+
+    $this->assertSame('/home/user/projects/fetched/packages', $path);
+  }
+
   public function testUrlBuilding1() {
     $url = Format::build_url('https://example.com', 'path', array('to', 'somewhere'), 'and', array('some/'), 'file.php');
 

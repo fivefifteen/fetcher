@@ -116,7 +116,11 @@ class Install extends Command {
       throw new \Error('No packages were defined');
     }
 
-    $directory = Format::build_path($working_directory, $install_directory);
+    if (str_starts_with($install_directory, '/')) {
+      $directory = $install_directory;
+    } else {
+      $directory = Format::build_path($working_directory, $install_directory);
+    }
 
     if ($fresh_start) {
       File::delete_directory($directory);

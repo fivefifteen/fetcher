@@ -87,7 +87,7 @@ Installs the defined packages. If no packages are defined, fetcher will attempt 
 
  - `[-a|--auth]` - Path to an auth file for installing from private repositories (See: [Installing from Private Repositories](#installing-from-private-repositories)) [default: `auth.json`]
  - `[-c|--config]` - Path to the config file [default: `fetch.json`]
- - `[-d|--install-directory]` - Path where packages should be installed to [default: `fetched`]
+ - `[-d|--install-directory]` - Path where packages should be installed to (relative or absolute) [default: `fetched`]
  - `[-e|--extensions]` - A comma separated list of extensions to extract from the packages
  - `[-f|--fresh-start]` - Deletes the entire fetched directory before running installation
  - `[-h|--header]` - The headers to use in any requests
@@ -95,7 +95,7 @@ Installs the defined packages. If no packages are defined, fetcher will attempt 
  - `[-p|--providers]` - The providers to search for packages from and their order [default: `github,npm`]
  - `[-q|--quiet]` - Run but don't output anything in the terminal
  - `[-s|--save]` - Save the newly installed packages to the config file's `dependencies` section (config file will be created if it doesn't exist)
- - `[-w|--working-directory]` - Sets the working directory that all paths will be relative to [default: `.`]
+ - `[-w|--working-directory]` - Sets the working directory that all relative paths will be relative to [default: `.`]
  - `[-x|--no-extract]` - Don't extract packages after they are downloaded
 
 
@@ -118,6 +118,9 @@ fetcher install npm:include-media@1.4.10 # same as above
 fetcher install --providers github eduardoboucas/include-media
 fetcher install github:eduardoboucas/include-media # same as above
 fetcher install github:eduardoboucas/include-media@latest # same as above
+
+# Install to an absolute path
+fetcher install --install-directory /var/www/assets/packages npm:include-media
 
 # Install the `include-media` package from a specific commit on GitHub but don't extract it, just download it save it to a custom config file
 fetcher i -c content/themes/my-theme/compile.json -s -p github -x eduardoboucas/include-media@"#fb3ab8e"
@@ -145,11 +148,11 @@ Uninstalls the defined packages. If no packages are defined, a confirmation mess
 ##### Options
 
  - `[-c|--config]` - Path to the config file [default: `fetch.json`]
- - `[-d|--install-directory]` - Path where packages are installed to [default: `fetched`]
+ - `[-d|--install-directory]` - Path where packages are installed to (relative or absolute) [default: `fetched`]
  - `[-f|--fresh-start]` - Deletes the entire fetched directory and optionally deletes all dependencies from fetch.json
  - `[-q|--quiet]` - Run but don't output anything in the terminal (implies `--skip-prompts`)
  - `[-s|--save]` - Remove the uninstalled packages from the config file's `dependencies` section
- - `[-w|--working-directory]` - Sets the working directory that all paths will be relative to [default: `.`]
+ - `[-w|--working-directory]` - Sets the working directory that all relative paths will be relative to [default: `.`]
  - `[-y|--skip-prompts]` - Skips the confirmation prompt and continues with deletion
 
 
