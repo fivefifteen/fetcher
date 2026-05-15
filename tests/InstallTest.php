@@ -321,6 +321,25 @@ class InstallTest extends TestCase {
     $this->assertSame(1, $files_count);
   }
 
+  public function testNpmVendorKeyAliasInstall1() {
+    $path = Format::build_path(self::$playground, 'testNpmVendorKeyAliasInstall1');
+    $install_path = Format::build_path($path, 'fetched');
+    $cmd = new Install();
+
+    $cmd->run(array(
+      'install_directory' => $install_path,
+      'packages'          => array('some-vendor/md5-file' => 'npm:md5-file@5.0.0'),
+      'quiet'             => true
+    ));
+
+    $pkg_path = Format::build_path($install_path, 'md5-file');
+    $test_file_exists = is_file(Format::build_path($pkg_path, 'test.js'));
+    $files_count = File::count_files($pkg_path);
+
+    $this->assertTrue($test_file_exists);
+    $this->assertSame(3, $files_count);
+  }
+
   public function testSavingInstallChanges1() {
     $path = Format::build_path(self::$playground, 'testSavingChanges1');
     $cmd = new Install();

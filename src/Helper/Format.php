@@ -161,9 +161,11 @@ class Format {
             $alias_author = $matches[1];
           }
         } else {
+          $name_from_value = !empty($name);
           $name = $matches[2];
+          $unscoped_providers = array('npm');
 
-          if (!$author) {
+          if (!$author && (!in_array(strtolower($provider), $unscoped_providers) || !$name_from_value)) {
             $author = $matches[1];
           }
         }

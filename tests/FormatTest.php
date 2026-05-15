@@ -348,5 +348,27 @@ class FormatTest extends TestCase {
     $this->assertSame(null, $info['alias_name']);
     $this->assertSame(null, $info['alias_author']);
   }
+
+  public function testVersionParsing17_NpmKeyVendorIsNotScope() {
+    $info = Format::parse_package_string('npm:md5-file@5.0.0', 'some-vendor/md5-file');
+
+    $this->assertSame('npm', $info['provider']);
+    $this->assertSame(null, $info['author']);
+    $this->assertSame('md5-file', $info['name']);
+    $this->assertSame('5.0.0', $info['version']);
+    $this->assertSame(null, $info['alias_name']);
+    $this->assertSame(null, $info['alias_author']);
+  }
+
+  public function testVersionParsing18_NpmKeyVendorIsScope() {
+    $info = Format::parse_package_string('npm:4.1.0', '@scope/package');
+
+    $this->assertSame('npm', $info['provider']);
+    $this->assertSame('@scope', $info['author']);
+    $this->assertSame('package', $info['name']);
+    $this->assertSame('4.1.0', $info['version']);
+    $this->assertSame(null, $info['alias_name']);
+    $this->assertSame(null, $info['alias_author']);
+  }
 }
 ?>
