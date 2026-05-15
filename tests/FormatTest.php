@@ -356,8 +356,8 @@ class FormatTest extends TestCase {
     $this->assertSame(null, $info['author']);
     $this->assertSame('md5-file', $info['name']);
     $this->assertSame('5.0.0', $info['version']);
-    $this->assertSame(null, $info['alias_name']);
-    $this->assertSame(null, $info['alias_author']);
+    $this->assertSame('md5-file', $info['alias_name']);
+    $this->assertSame('some-vendor', $info['alias_author']);
   }
 
   public function testVersionParsing18_NpmKeyVendorIsScope() {

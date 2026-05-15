@@ -167,6 +167,9 @@ class Format {
 
           if (!$author && (!in_array(strtolower($provider), $unscoped_providers) || !$name_from_value)) {
             $author = $matches[1];
+          } elseif ($name_from_value && $matches[1] && in_array(strtolower($provider), $unscoped_providers)) {
+            $alias_name = $matches[2];
+            $alias_author = $matches[1];
           }
         }
       }

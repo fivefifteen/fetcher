@@ -332,7 +332,7 @@ class InstallTest extends TestCase {
       'quiet'             => true
     ));
 
-    $pkg_path = Format::build_path($install_path, 'md5-file');
+    $pkg_path = Format::build_path($install_path, 'some-vendor', 'md5-file');
     $test_file_exists = is_file(Format::build_path($pkg_path, 'test.js'));
     $files_count = File::count_files($pkg_path);
 
